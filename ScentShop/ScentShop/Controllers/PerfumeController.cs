@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ScentShop.Models;
+using ScentShop.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,13 @@ namespace ScentShop.Controllers
 
         public ViewResult List()
         {
-            return View(_perfumeRepository.GetAllPerfumes());
+            PerfumesListViewModel perfumesListViewModel = new PerfumesListViewModel();
+            
+            perfumesListViewModel.Perfumes = _perfumeRepository.GetAllPerfumes();
+
+            perfumesListViewModel.CurrentCategory = "For Her & For Him";
+
+            return View(perfumesListViewModel);
         }
     }
 }

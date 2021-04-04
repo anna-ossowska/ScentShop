@@ -21,3 +21,14 @@ C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5
 C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\ref\ScentShop.dll
 C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\ScentShop.pdb
 C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\ScentShop.genruntimeconfig.cache
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\bin\Debug\net5.0\ScentShop.Views.dll
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\bin\Debug\net5.0\ScentShop.Views.pdb
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\ScentShop.RazorAssemblyInfo.cache
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\ScentShop.RazorAssemblyInfo.cs
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\ScentShop.TagHelpers.input.cache
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\ScentShop.TagHelpers.output.cache
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\ScentShop.RazorCoreGenerate.cache
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\Razor\Views\Perfume\List.cshtml.g.cs
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\ScentShop.RazorTargetAssemblyInfo.cs
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\ScentShop.Views.pdb
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\ScentShop.csproj.CopyComplete
