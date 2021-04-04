@@ -1,24 +1,13 @@
-﻿@model ScentShop.ViewModels.PerfumesListViewModel
+﻿@model PerfumesListViewModel
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScentShop</title>
-</head>
-<body>
-    <h1>@Model.CurrentCategory</h1>
-    @foreach (var perfume in Model.Perfumes)
-    {
-        <div>
-            <h2>@perfume.Name</h2>
-            <p>by @perfume.Brand</p>
-            <p>@perfume.Capacity ml</p>
-            <p>@perfume.Price.ToString()$</p>
-            <p>@perfume.Category.CategoryName</p>
-        </div>
-    }
-</body>
-</html>
+<h1>@Model.CurrentCategory</h1>
+@foreach (var perfume in Model.Perfumes)
+{
+    <div>
+        <h2>@perfume.Name</h2>
+        <p>by @perfume.Brand</p>
+        <p>@perfume.Capacity ml</p>
+        <p>@perfume.Price.ToString()$</p>
+        <p>@perfume.Category.CategoryName</p>
+    </div>
+}
