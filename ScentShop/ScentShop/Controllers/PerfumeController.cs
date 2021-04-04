@@ -21,11 +21,12 @@ namespace ScentShop.Controllers
 
         public ViewResult List()
         {
-            PerfumesListViewModel perfumesListViewModel = new PerfumesListViewModel();
-            
-            perfumesListViewModel.Perfumes = _perfumeRepository.GetAllPerfumes();
+            PerfumesListViewModel perfumesListViewModel = new PerfumesListViewModel
+            {
+                Perfumes = _perfumeRepository.GetAllPerfumes(),
 
-            perfumesListViewModel.CurrentCategory = "For Her & For Him";
+                CurrentCategory = "For Her & For Him"
+            };
 
             return View(perfumesListViewModel);
         }
