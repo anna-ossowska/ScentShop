@@ -33,8 +33,8 @@ namespace ScentShop
             services.AddControllersWithViews();
 
             // register your own services
-            services.AddScoped<IPerfumeRepository, MockPerfumeRepository>();
-            services.AddScoped<ICategoryRepository, MockCategoryRepository>();
+            services.AddScoped<IPerfumeRepository, PerfumeRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
