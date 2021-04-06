@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "ScentShop/1.0.0": {
         "dependencies": {
+          "LigerShark.WebOptimizer.Sass": "3.0.40-beta",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.4",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
@@ -288,7 +289,7 @@
           "System.Text.Encoding.Reference": "5.0.0.0",
           "System.Text.Encoding.Extensions.Reference": "5.0.0.0",
           "System.Text.Encodings.Web.Reference": "5.0.0.0",
-          "System.Text.Json": "5.0.0.0",
+          "System.Text.Json.Reference": "5.0.0.0",
           "System.Text.RegularExpressions.Reference": "5.0.0.0",
           "System.Threading.Channels": "5.0.0.0",
           "System.Threading.Reference": "5.0.0.0",
@@ -331,6 +332,36 @@
             "assemblyVersion": "2.8.0.0",
             "fileVersion": "2.8.26.1919"
           }
+        }
+      },
+      "LigerShark.WebOptimizer.Core/3.0.249": {
+        "dependencies": {
+          "NUglify": "1.5.13",
+          "System.Text.Json": "4.6.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/WebOptimizer.Core.dll": {
+            "assemblyVersion": "3.0.249.0",
+            "fileVersion": "3.0.249.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.0/WebOptimizer.Core.dll": {}
+        }
+      },
+      "LigerShark.WebOptimizer.Sass/3.0.40-beta": {
+        "dependencies": {
+          "LigerShark.WebOptimizer.Core": "3.0.249",
+          "SharpScss": "1.4.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/WebOptimizer.Sass.dll": {
+            "assemblyVersion": "3.0.40.0",
+            "fileVersion": "3.0.40.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.0/WebOptimizer.Sass.dll": {}
         }
       },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
@@ -1082,10 +1113,54 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "NUglify/1.5.13": {
+        "runtime": {
+          "lib/netstandard2.0/NUglify.dll": {
+            "assemblyVersion": "1.5.13.0",
+            "fileVersion": "1.5.13.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NUglify.dll": {}
+        }
+      },
       "runtime.native.System/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.3"
+        }
+      },
+      "SharpScss/1.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/SharpScss.dll": {
+            "assemblyVersion": "1.4.0.0",
+            "fileVersion": "1.4.0.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libsass.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libsass.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libsass.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libsass.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/SharpScss.dll": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -1718,6 +1793,7 @@
         }
       },
       "System.Text.Encodings.Web/4.5.0": {},
+      "System.Text.Json/4.6.0": {},
       "System.Text.RegularExpressions/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -3324,7 +3400,7 @@
         },
         "compileOnly": true
       },
-      "System.Text.Json/5.0.0.0": {
+      "System.Text.Json.Reference/5.0.0.0": {
         "compile": {
           "System.Text.Json.dll": {}
         },
@@ -3512,6 +3588,20 @@
       "sha512": "sha512-OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "path": "humanizer.core/2.8.26",
       "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
+    },
+    "LigerShark.WebOptimizer.Core/3.0.249": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7mJk3ekyt2ciUprwVGH4eeMV8/W8u53HnEQj5sqB9vn/dsTsZRTYTt4zyWnuJLQ4MhSER75ZMO6NFVf3Wwuoeg==",
+      "path": "ligershark.weboptimizer.core/3.0.249",
+      "hashPath": "ligershark.weboptimizer.core.3.0.249.nupkg.sha512"
+    },
+    "LigerShark.WebOptimizer.Sass/3.0.40-beta": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UMPXcaCYXQydaPA0wDzQ+d14Cl00wDyY5GC0hLN7Eif58NknyO4QRdIDu6SGySL9mhOktJNjBXi4A95tMt3ZyQ==",
+      "path": "ligershark.weboptimizer.sass/3.0.40-beta",
+      "hashPath": "ligershark.weboptimizer.sass.3.0.40-beta.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
       "type": "package",
@@ -3856,12 +3946,26 @@
       "path": "newtonsoft.json/11.0.2",
       "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
     },
+    "NUglify/1.5.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EgvMq0u3PEeKv6uypBvau999iNSOSYdayZcxsgS9TBWIqs63WIWI/syl7cOs82J54xJnS3STpKZAW4SZElGIqg==",
+      "path": "nuglify/1.5.13",
+      "hashPath": "nuglify.1.5.13.nupkg.sha512"
+    },
     "runtime.native.System/4.3.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-c/qWt2LieNZIj1jGnVNsE2Kl23Ya2aSTBuXMD6V7k9KWr6l16Tqdwq+hJScEpWER9753NWC8h96PaVNY5Ld7Jw==",
       "path": "runtime.native.system/4.3.0",
       "hashPath": "runtime.native.system.4.3.0.nupkg.sha512"
+    },
+    "SharpScss/1.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hGX//4BVw2ALDSiOHHnXwJldzMOtUnVObtyYDT0Kt0LviKrQ9fSQkh00rddaVExY/tiVLYSEsHzKRkRIOvRGAg==",
+      "path": "sharpscss/1.4.0",
+      "hashPath": "sharpscss.1.4.0.nupkg.sha512"
     },
     "System.Collections/4.3.0": {
       "type": "package",
@@ -4310,6 +4414,13 @@
       "sha512": "sha512-Xg4G4Indi4dqP1iuAiMSwpiWS54ZghzR644OtsRCm/m/lBMG8dUBhLVN7hLm8NNrNTR+iGbshCPTwrvxZPlm4g==",
       "path": "system.text.encodings.web/4.5.0",
       "hashPath": "system.text.encodings.web.4.5.0.nupkg.sha512"
+    },
+    "System.Text.Json/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4F8Xe+JIkVoDJ8hDAZ7HqLkjctN/6WItJIzQaifBwClC7wmoLSda/Sv2i6i1kycqDb3hWF4JCVbpAweyOKHEUA==",
+      "path": "system.text.json/4.6.0",
+      "hashPath": "system.text.json.4.6.0.nupkg.sha512"
     },
     "System.Text.RegularExpressions/4.3.0": {
       "type": "package",
@@ -5634,7 +5745,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Text.Json/5.0.0.0": {
+    "System.Text.Json.Reference/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

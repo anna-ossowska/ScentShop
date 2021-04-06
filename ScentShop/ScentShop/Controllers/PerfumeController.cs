@@ -30,5 +30,17 @@ namespace ScentShop.Controllers
 
             return View(perfumesListViewModel);
         }
+
+        public IActionResult Details(int id)
+        {
+            var perfume = _perfumeRepository.GetById(id);
+
+            if (perfume == null)
+            {
+                return NotFound();
+            }
+
+            return View(perfume);
+        }
     }
 }

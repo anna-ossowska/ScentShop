@@ -4,7 +4,7 @@
 @foreach (var perfume in Model.Perfumes)
 {
     <div>
-        <h2>@perfume.Name</h2>
+        <h2><a asp-controller="Perfume" asp-action="Details" asp-route-id="@perfume.Id">@perfume.Name</a></h2>
         <p>by @perfume.Brand</p>
         <p>@perfume.Capacity ml</p>
         <p>@perfume.Price.ToString()$</p>
