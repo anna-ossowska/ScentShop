@@ -1,0 +1,6 @@
+﻿@model HomeViewModel
+
+@foreach (var perfume in Model.PerfumesOfTheWeek)
+{
+    <partial name="_PerfumeCard" model="perfume"/>
+} 
