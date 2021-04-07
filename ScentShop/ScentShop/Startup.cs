@@ -32,6 +32,9 @@ namespace ScentShop
             // support for MVC
             services.AddControllersWithViews();
 
+            services.AddHttpContextAccessor();
+            services.AddSession();
+
             // register your own services
             services.AddScoped<IPerfumeRepository, PerfumeRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
