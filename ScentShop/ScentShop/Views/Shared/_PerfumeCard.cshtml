@@ -1,0 +1,9 @@
+﻿@model Perfume
+
+<div>
+    <h2><a asp-controller="Perfume" asp-action="Details" asp-route-id="@Model.Id">@Model.Name</a></h2>
+    <p>by @Model.Brand</p>
+    <p>@Model.Capacity ml</p>
+    <p>@Model.Price.ToString()$</p>
+    <p>@Model.Category.CategoryName</p>
+</div>
