@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -79,6 +80,38 @@ namespace ScentShop.Models
                 _appDbContext.SaveChanges();
             }
             return localAmount;
+        }
+
+        public List<ShoppingCartItem> GetShoppingCartItems()
+        {
+            return ShoppingCartItems ??
+                   (ShoppingCartItems =
+                       _appDbContext.ShoppingCartItems.Where(s => s.ShoppingCartId == ShoppingCartId)
+                           .Include(s => s.Perfume)
+                           .ToList());
+
+        }
+
+        public void ClearCart()
+        {
+            var cartItems =
+                _appDbContext.ShoppingCartItems
+                    .Where(s => s.ShoppingCartId == ShoppingCartId);
+
+            _appDbContext.ShoppingCartItems.RemoveRange(cartItems);
+
+            _appDbContext.SaveChanges();
+        }
+
+        public decimal GetShoppingCartTotal()
+        {
+            var total =
+                _appDbContext.ShoppingCartItems
+                    .Where(s => s.ShoppingCartId == ShoppingCartId)
+                    .Select(s => s.Perfume.Price * s.Amount)
+                    .Sum();
+
+            return total;
         }
     }
 }
