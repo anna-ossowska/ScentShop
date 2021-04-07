@@ -56,5 +56,29 @@ namespace ScentShop.Models
             }
             _appDbContext.SaveChanges();
         }
+
+        public int RemoveFromCart(Perfume perfume)
+        {
+            var shoppingCartItem =
+                _appDbContext.ShoppingCartItems.SingleOrDefault(
+                    s => s.Perfume.Id == perfume.Id && s.ShoppingCartId == ShoppingCartId);
+
+            var localAmount = 0;
+
+            if (shoppingCartItem != null)
+            {
+                if (shoppingCartItem.Amount > 1)
+                {
+                    shoppingCartItem.Amount--;
+                    localAmount = shoppingCartItem.Amount;
+                }
+                else
+                {
+                    _appDbContext.ShoppingCartItems.Remove(shoppingCartItem);
+                }
+                _appDbContext.SaveChanges();
+            }
+            return localAmount;
+        }
     }
 }
