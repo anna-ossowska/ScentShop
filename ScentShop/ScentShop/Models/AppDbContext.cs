@@ -14,6 +14,7 @@ namespace ScentShop.Models
 
         public DbSet<Perfume> Perfumes { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
