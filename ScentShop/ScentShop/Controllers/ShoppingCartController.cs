@@ -26,7 +26,8 @@ namespace ScentShop.Controllers
 
             var shoppingCarViewModel = new ShoppingCartViewModel
             {
-                ShoppingCart = _shoppingCart
+                ShoppingCart = _shoppingCart,
+                Total = _shoppingCart.GetShoppingCartTotal()
             };
 
             return View(shoppingCarViewModel);
