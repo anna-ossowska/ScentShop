@@ -19,16 +19,44 @@ namespace ScentShop.Controllers
             this._categoryRepository = categoryRepository;
         }
 
-        public ViewResult List()
-        {
-            PerfumesListViewModel perfumesListViewModel = new PerfumesListViewModel
-            {
-                Perfumes = _perfumeRepository.GetAllPerfumes(),
+        //public ViewResult List()
+        //{
+        //    PerfumesListViewModel perfumesListViewModel = new PerfumesListViewModel
+        //    {
+        //        Perfumes = _perfumeRepository.GetAllPerfumes(),
 
-                CurrentCategory = "For Her & For Him"
+        //        CurrentCategory = "For Her & For Him"
+        //    };
+
+        //    return View(perfumesListViewModel);
+        //}
+
+        public ViewResult List(string category)
+        {
+            IEnumerable<Perfume> perfumes;
+            string currentCategory;
+
+            if (string.IsNullOrEmpty(category))
+            {
+                perfumes = _perfumeRepository.GetAllPerfumes();
+                currentCategory = "All Perfumes";
+            }
+            else
+            {
+                perfumes = _perfumeRepository.GetAllPerfumes()
+                    .Where(p => p.Category.CategoryName == category);
+
+                currentCategory = _categoryRepository.GetAllCategories()
+                    .FirstOrDefault(c => c.CategoryName == category).CategoryName;
+            }
+
+            var perfumeListViewModel = new PerfumesListViewModel
+            {
+                Perfumes = perfumes,
+                CurrentCategory = currentCategory
             };
 
-            return View(perfumesListViewModel);
+            return View(perfumeListViewModel);
         }
 
         public IActionResult Details(int id)
