@@ -1,9 +1,10 @@
 ﻿@model IEnumerable<Category>
 
-<li class="dropdown">
+<h3>Sort by category</h3>
+<li class="dropdown" style="list-style-type: none;">
     <a asp-controller="Perfume"
        asp-action="List"
-       class="dropdown-toggle" data-toggle="dropdown">Perfumes<b class="caret"></b></a>
+       class="dropdown-toggle" data-toggle="dropdown" style="text-decoration: none;">Category<b class="caret"></b></a>
     <ul class="dropdown-menu">
         @foreach (var category in Model)
         {
@@ -18,3 +19,4 @@
         </li>
     </ul>
 </li>
+<br />

@@ -1,6 +1,6 @@
 ﻿@model PerfumesListViewModel
 
-<h1>@Model.CurrentCategory</h1>
+@await Component.InvokeAsync("CategoryMenu")
 
 @foreach (var perfume in Model.Perfumes)
 {
