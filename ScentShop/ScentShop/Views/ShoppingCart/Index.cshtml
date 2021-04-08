@@ -1,0 +1,10 @@
+﻿@model ShoppingCartViewModel
+<h2>Shopping Cart</h2>
+
+@foreach (var item in Model.ShoppingCart.ShoppingCartItems)
+{
+    <p>@item.Perfume.Name</p>
+    <p>@item.Perfume.Brand</p>
+    <p>@item.Perfume.Price</p>
+    <p>@item.Amount</p>
+}

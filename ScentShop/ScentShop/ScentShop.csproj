@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\images\" />
-    <Folder Include="wwwroot\js\site.js\" />
   </ItemGroup>
 
   <ItemGroup>
