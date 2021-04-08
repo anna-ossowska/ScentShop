@@ -10,5 +10,6 @@ namespace ScentShop.ViewModels
     {
         public ShoppingCart ShoppingCart { get; set; }
         public decimal Total { get; set; }
+        public Perfume Perfume { get; set; }
     }
 }

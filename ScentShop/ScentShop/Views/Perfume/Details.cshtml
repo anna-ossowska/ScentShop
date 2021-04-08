@@ -7,4 +7,6 @@
     <p>@Model.Price $</p>
     <p>@Model.Capacity ml</p>
     <p>@Model.Description</p>
+
+    <a asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-perfumeId="@Model.Id" class="btn btn-light">Add To Cart</a>
 </div>
