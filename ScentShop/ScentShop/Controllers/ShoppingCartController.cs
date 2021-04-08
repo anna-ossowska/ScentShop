@@ -31,5 +31,17 @@ namespace ScentShop.Controllers
 
             return View(shoppingCarViewModel);
         }
+
+        // perfumeId is used in asp-route-perfumeId
+        public RedirectToActionResult AddtoShoppingCart(int perfumeId)
+        {
+            var selectedPerfume = _perfumeRepository.GetAllPerfumes().FirstOrDefault(p => p.Id == perfumeId);
+
+            if (selectedPerfume != null)
+            {
+                _shoppingCart.AddToCart(selectedPerfume, 1);
+            }
+            return RedirectToAction("Index");
+        }
     }
 }
