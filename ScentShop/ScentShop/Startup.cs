@@ -40,6 +40,7 @@ namespace ScentShop
             // register your own services
             services.AddScoped<IPerfumeRepository, PerfumeRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<ShoppingCart>(s => ShoppingCart.GetCart(s));
         }
 
