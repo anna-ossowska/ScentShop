@@ -158,3 +158,4 @@ C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5
 C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\Razor\Views\Shared\Components\ShoppingCartSummary\Default.cshtml.g.cs
 C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\Razor\Views\Shared\Components\CategoryMenu\Default.cshtml.g.cs
 C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\Razor\Views\Contact\Index.cshtml.g.cs
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\Razor\Views\Order\Checkout.cshtml.g.cs
