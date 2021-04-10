@@ -14,57 +14,64 @@ namespace ScentShop.Models
 
         public List<OrderDetail> OrderDetails { get; set; }
 
-        [Required(ErrorMessage = "Please enter your first name")]
+        [Required]
+        [RegularExpression(@"[A-Za-z]+", ErrorMessage = "Please enter a valid first name. The field must consist of letters only.")]
         [Display(Name = "First Name")]
         [StringLength(50)]
         public string FirstName { get; set; }
 
-        [Required(ErrorMessage = "Please enter your last name")]
+        [Required]
+        [RegularExpression(@"[A-Za-z]+", ErrorMessage = "Please enter a valid last name. The field must consist of letters only.")]
         [Display(Name ="Last Name")]
         [StringLength(50)]
         public string LastName { get; set; }
 
-        [Required(ErrorMessage = "Please enter your address")]
+        [Required]
         [Display(Name = "Address Line 1")]
         [StringLength(100)]
         public string AddressLine1 { get; set; }
 
-        [Required(ErrorMessage = "Please enter your address")]
+        [Required]
         [Display(Name = "Address Line 2")]
         [StringLength(100)]
         public string AddressLine2 { get; set; }
 
-        [Required(ErrorMessage ="Please enter your zip code")]
+        [Required]
+        [RegularExpression(@"^[0-9]+", ErrorMessage = "Please enter a valid zip-code. The field must consist of 4-10 digits.")]
         [Display(Name = "Zip Code")]
         [StringLength(10, MinimumLength = 4)]
         public string ZipCode { get; set; }
 
-        [Required(ErrorMessage = "Please enter your city")]
+        [Required]
+        [RegularExpression(@"[A-Za-z]+", ErrorMessage = "Please enter a valid city. The field must consist of letters only.")]
         [Display(Name = "City")]
         [StringLength(20)]
         public string City { get; set; }
 
-        [Required(ErrorMessage = "Please enter your state")]
+        [Required]
+        [RegularExpression(@"[A-Za-z]+", ErrorMessage = "Please enter a valid state. The field must consist of letters only.")]
         [Display(Name = "State")]
         [StringLength(15)]
         public string State { get; set; }
 
-        [Required(ErrorMessage = "Please enter your country")]
+        [Required]
+        [RegularExpression(@"[A-Za-z]+", ErrorMessage = "Please enter a valid country. The field must consist of letters only.")]
         [Display(Name = "Contry")]
         [StringLength(20)]
         public string Country { get; set; }
 
-        [Required(ErrorMessage = "Please enter your phone number")]
+        [Required]
+        [RegularExpression(@"^[0-9]+", ErrorMessage = "Please enter a valid phone number. The field must consist of numbers only.")]
         [Display(Name = "Phone Number")]
         [StringLength(25)]
         [DataType(DataType.PhoneNumber)]
         public string PhoneNumber { get; set; }
 
-        [Required(ErrorMessage = "Please enter your email")]
+        [Required]
         [Display(Name = "Email")]
         [StringLength(25)]
         [DataType(DataType.EmailAddress)]
-        [RegularExpression(@"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")]
+        [RegularExpression(@"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?", ErrorMessage = "Please enter a valid email.")]
         public string Email { get; set; }
 
         [BindNever]
