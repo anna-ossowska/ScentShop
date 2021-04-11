@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,9 +30,14 @@ namespace ScentShop
             services.AddDbContext<AppDbContext>(options => 
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<AppDbContext>();
+
             // register framework services
             // support for MVC
             services.AddControllersWithViews();
+
+            // support for the scaffolded Identity
+            services.AddRazorPages();
 
             // required for the shopping card functionality
             services.AddHttpContextAccessor();
@@ -68,6 +74,9 @@ namespace ScentShop
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                // support for the scaffolded Identity
+                endpoints.MapRazorPages();
             });
         }
     }
