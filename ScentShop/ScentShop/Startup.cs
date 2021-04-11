@@ -61,6 +61,8 @@ namespace ScentShop
 
             app.UseRouting();
 
+            app.UseAuthentication();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

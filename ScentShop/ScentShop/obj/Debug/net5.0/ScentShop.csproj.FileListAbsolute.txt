@@ -161,3 +161,12 @@ C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5
 C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\Razor\Views\Order\Checkout.cshtml.g.cs
 C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\Razor\Views\Order\CheckoutComplete.cshtml.g.cs
 C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\bin\Debug\net5.0\ScentShop.StaticWebAssets.xml
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
