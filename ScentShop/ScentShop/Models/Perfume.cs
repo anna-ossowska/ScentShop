@@ -20,5 +20,6 @@ namespace ScentShop.Models
         public int CategoryId { get; set; }
         public Category Category { get; set; }
         public bool IsDiscounted { get; set; }
+        public string KeyNotes { get; set; }
     }
 }
