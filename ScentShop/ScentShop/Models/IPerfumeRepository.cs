@@ -10,5 +10,6 @@ namespace ScentShop.Models
         IEnumerable<Perfume> GetAllPerfumes();
         IEnumerable<Perfume> PerfumesOfTheWeek();
         Perfume GetById(int perfumeId);
+        IEnumerable<Perfume> GetAllPerfumesByName(string searchString);
     }
 }

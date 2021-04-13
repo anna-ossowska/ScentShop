@@ -2,6 +2,19 @@
 
 @await Component.InvokeAsync("CategoryMenu")
 
+<br />
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input asp-for="SearchString" class="form-control">
+            <button class="btn btn-info" type="submit" value="Filter">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+</form>
+<br />
+
 @foreach (var perfume in Model.Perfumes)
 {
     <partial name="_PerfumeCard" model="perfume" />

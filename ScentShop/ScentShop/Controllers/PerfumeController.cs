@@ -31,21 +31,22 @@ namespace ScentShop.Controllers
         //    return View(perfumesListViewModel);
         //}
 
-        public ViewResult List(string category)
+
+        public ViewResult List(string category, string searchString)
         {
             IEnumerable<Perfume> perfumes;
             string currentCategory;
 
-            if (string.IsNullOrEmpty(category))
-            {
-                perfumes = _perfumeRepository.GetAllPerfumes();
-                currentCategory = "All Perfumes";
-            }
-            else
-            {
-                perfumes = _perfumeRepository.GetAllPerfumes()
-                    .Where(p => p.Category.CategoryName == category);
+            perfumes = _perfumeRepository.GetAllPerfumes();
+            currentCategory = "All Perfumes";
 
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                perfumes = _perfumeRepository.GetAllPerfumesByName(searchString);
+            }
+
+            if (!string.IsNullOrEmpty(category))
+            {
                 currentCategory = _categoryRepository.GetAllCategories()
                     .FirstOrDefault(c => c.CategoryName == category).CategoryName;
             }
@@ -53,11 +54,14 @@ namespace ScentShop.Controllers
             var perfumeListViewModel = new PerfumesListViewModel
             {
                 Perfumes = perfumes,
+                SearchString = searchString,
                 CurrentCategory = currentCategory
+
             };
 
             return View(perfumeListViewModel);
         }
+
 
         public IActionResult Details(int id)
         {

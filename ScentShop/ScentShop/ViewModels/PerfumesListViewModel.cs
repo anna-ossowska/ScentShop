@@ -10,5 +10,6 @@ namespace ScentShop.ViewModels
     {
         public IEnumerable<Perfume> Perfumes { get; set; }
         public string CurrentCategory { get; set; }
+        public string SearchString { get; set; }
     }
 }

@@ -31,5 +31,10 @@ namespace ScentShop.Models
         {
             return _appDbContext.Perfumes.Include(c => c.Category).Where(p => p.IsPerfumeOfTheWeek == true);
         }
+
+        public IEnumerable<Perfume> GetAllPerfumesByName(string searchString)
+        {
+            return _appDbContext.Perfumes.Where(p => p.Name.Contains(searchString.ToLower()) || p.Brand.Contains(searchString.ToLower()));
+        }
     }
 }

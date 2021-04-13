@@ -80,5 +80,12 @@ namespace ScentShop.Models
                    where p.IsPerfumeOfTheWeek == true
                    select p;
         }
+
+        public IEnumerable<Perfume> GetAllPerfumesByName(string searchString)
+        {
+            return from p in perfumes
+                   where p.Name.Contains(searchString.ToLower()) || p.Brand.Contains(searchString.ToLower())
+                   select p;
+        }
     }
 }
