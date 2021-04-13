@@ -43,9 +43,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "LigerShark.WebOptimizer.Sass": {
+            "CloudinaryDotNet": {
               "target": "Package",
-              "version": "[3.0.40-beta, )"
+              "version": "[1.15.1, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",

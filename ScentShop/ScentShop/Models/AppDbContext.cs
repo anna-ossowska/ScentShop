@@ -37,7 +37,7 @@ namespace ScentShop.Models
                 Brand = "Versace",
                 Capacity = 198,
                 Price = 140M,
-                ImageThumbnailUrl = "https://images.unsplash.com/photo-1523293182086-7651a899d37f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80",
+                ImageThumbnailUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618217350/ScentShop/card-3_chnyqj.png",
                 Description = "Inspired by a mixture of Donatella Versace's favorite floral fragrances, Bright Crystal is a fresh, sensual blend of refreshing chilled yuzu and pomegranate mingled with soothing blossoms of peony, magnolia, and lotus flower, warmed with notes of musk and amber.",
                 IsPerfumeOfTheWeek = true,
                 InStock = true,

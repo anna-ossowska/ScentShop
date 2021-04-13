@@ -2,6 +2,21 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "CloudinaryDotNet/1.15.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Html.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.WebEncoders": "5.0.3",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/CloudinaryDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CloudinaryDotNet.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -10,41 +25,6 @@
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {}
         }
-      },
-      "LigerShark.WebOptimizer.Core/3.0.249": {
-        "type": "package",
-        "dependencies": {
-          "NUglify": "1.5.13",
-          "System.Text.Json": "4.6.0"
-        },
-        "compile": {
-          "lib/netcoreapp3.0/WebOptimizer.Core.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/WebOptimizer.Core.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ],
-        "build": {
-          "build/_._": {}
-        }
-      },
-      "LigerShark.WebOptimizer.Sass/3.0.40-beta": {
-        "type": "package",
-        "dependencies": {
-          "LigerShark.WebOptimizer.Core": "3.0.249",
-          "SharpScss": "1.4.0"
-        },
-        "compile": {
-          "lib/netcoreapp3.0/WebOptimizer.Sass.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/WebOptimizer.Sass.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       },
       "Microsoft.AspNetCore.Cryptography.Internal/5.0.4": {
         "type": "package",
@@ -77,6 +57,31 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
         }
       },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/5.0.4": {
@@ -738,6 +743,19 @@
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
+      "Microsoft.Extensions.WebEncoders/5.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Options": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.WebEncoders.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.WebEncoders.dll": {}
+        }
+      },
       "Microsoft.Identity.Client/4.14.0": {
         "type": "package",
         "dependencies": {
@@ -996,22 +1014,13 @@
           }
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
-      "NUglify/1.5.13": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/NUglify.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/NUglify.dll": {}
         }
       },
       "runtime.native.System/4.3.0": {
@@ -1025,33 +1034,6 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
-        }
-      },
-      "SharpScss/1.4.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/SharpScss.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/SharpScss.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/linux-x64/native/libsass.so": {
-            "assetType": "native",
-            "rid": "linux-x64"
-          },
-          "runtimes/osx-x64/native/libsass.dylib": {
-            "assetType": "native",
-            "rid": "osx-x64"
-          },
-          "runtimes/win-x64/native/libsass.dll": {
-            "assetType": "native",
-            "rid": "win-x64"
-          },
-          "runtimes/win-x86/native/libsass.dll": {
-            "assetType": "native",
-            "rid": "win-x86"
-          }
         }
       },
       "System.Collections/4.3.0": {
@@ -2039,15 +2021,6 @@
           "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         }
       },
-      "System.Text.Json/4.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp3.0/System.Text.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/System.Text.Json.dll": {}
-        }
-      },
       "System.Text.RegularExpressions/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2212,6 +2185,24 @@
     }
   },
   "libraries": {
+    "CloudinaryDotNet/1.15.1": {
+      "sha512": "/g0+5K/ick2qx4/+j+RaFC2TSCQ1R6RcerrGcnANANV1skcoUmOc8AaRuuK7Mlq1JNh39v9xaovU4g/RW8cuEA==",
+      "type": "package",
+      "path": "cloudinarydotnet/1.15.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CloudinaryIcon.png",
+        "cloudinarydotnet.1.15.1.nupkg.sha512",
+        "cloudinarydotnet.nuspec",
+        "lib/net452/CloudinaryDotNet.dll",
+        "lib/net452/CloudinaryDotNet.xml",
+        "lib/netstandard1.3/CloudinaryDotNet.dll",
+        "lib/netstandard1.3/CloudinaryDotNet.xml",
+        "lib/netstandard2.0/CloudinaryDotNet.dll",
+        "lib/netstandard2.0/CloudinaryDotNet.xml"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -2226,34 +2217,6 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
-      ]
-    },
-    "LigerShark.WebOptimizer.Core/3.0.249": {
-      "sha512": "7mJk3ekyt2ciUprwVGH4eeMV8/W8u53HnEQj5sqB9vn/dsTsZRTYTt4zyWnuJLQ4MhSER75ZMO6NFVf3Wwuoeg==",
-      "type": "package",
-      "path": "ligershark.weboptimizer.core/3.0.249",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/LigerShark.WebOptimizer.Core.props",
-        "build/LigerShark.WebOptimizer.Core.targets",
-        "lib/netcoreapp3.0/WebOptimizer.Core.dll",
-        "lib/netcoreapp3.0/WebOptimizer.Core.xml",
-        "ligershark.weboptimizer.core.3.0.249.nupkg.sha512",
-        "ligershark.weboptimizer.core.nuspec"
-      ]
-    },
-    "LigerShark.WebOptimizer.Sass/3.0.40-beta": {
-      "sha512": "UMPXcaCYXQydaPA0wDzQ+d14Cl00wDyY5GC0hLN7Eif58NknyO4QRdIDu6SGySL9mhOktJNjBXi4A95tMt3ZyQ==",
-      "type": "package",
-      "path": "ligershark.weboptimizer.sass/3.0.40-beta",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netcoreapp3.0/WebOptimizer.Sass.dll",
-        "lib/netcoreapp3.0/WebOptimizer.Sass.xml",
-        "ligershark.weboptimizer.sass.3.0.40-beta.nupkg.sha512",
-        "ligershark.weboptimizer.sass.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/5.0.4": {
@@ -2305,6 +2268,32 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.xml",
         "microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.html.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+      "sha512": "Nxs7Z1q3f1STfLYKJSVXCs1iBl+Ya6E8o4Oy1bCxJ/rNI44E/0f6tbsrVqAWfB7jlnJfyaAtIalBVxPKUPQb4Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.xml",
+        "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "sha512": "ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.features/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
+        "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/5.0.4": {
@@ -3272,6 +3261,25 @@
         "version.txt"
       ]
     },
+    "Microsoft.Extensions.WebEncoders/5.0.3": {
+      "sha512": "NF5xPPZYJZNXIoHULq+hS6jIrkQt5X5qIMnH8Gz/uXsLVJCArrmP9ef5XuPkbCmTMepD+Ly8Qma+jwxqOPeHwQ==",
+      "type": "package",
+      "path": "microsoft.extensions.webencoders/5.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.WebEncoders.dll",
+        "lib/net461/Microsoft.Extensions.WebEncoders.xml",
+        "lib/net5.0/Microsoft.Extensions.WebEncoders.dll",
+        "lib/net5.0/Microsoft.Extensions.WebEncoders.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.xml",
+        "microsoft.extensions.webencoders.5.0.3.nupkg.sha512",
+        "microsoft.extensions.webencoders.nuspec"
+      ]
+    },
     "Microsoft.Identity.Client/4.14.0": {
       "sha512": "Etqux6Zuuv1yEN4UwKbAn6EZv0Rooc+vM4N9z7gxmeT7dyoKlXIRN44DQPzD9LV1CW0KsTVqH+2B42p1NKqPlQ==",
       "type": "package",
@@ -3933,10 +3941,10 @@
         "version.txt"
       ]
     },
-    "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
-      "path": "newtonsoft.json/11.0.2",
+      "path": "newtonsoft.json/12.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3959,27 +3967,9 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.11.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
-      ]
-    },
-    "NUglify/1.5.13": {
-      "sha512": "EgvMq0u3PEeKv6uypBvau999iNSOSYdayZcxsgS9TBWIqs63WIWI/syl7cOs82J54xJnS3STpKZAW4SZElGIqg==",
-      "type": "package",
-      "path": "nuglify/1.5.13",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net35/NUglify.dll",
-        "lib/net35/NUglify.xml",
-        "lib/net40/NUglify.dll",
-        "lib/net40/NUglify.xml",
-        "lib/netstandard1.3/NUglify.dll",
-        "lib/netstandard1.3/NUglify.xml",
-        "lib/netstandard2.0/NUglify.dll",
-        "lib/netstandard2.0/NUglify.xml",
-        "nuglify.1.5.13.nupkg.sha512",
-        "nuglify.nuspec"
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "runtime.native.System/4.3.0": {
@@ -3993,34 +3983,6 @@
         "lib/netstandard1.0/_._",
         "runtime.native.system.4.3.0.nupkg.sha512",
         "runtime.native.system.nuspec"
-      ]
-    },
-    "SharpScss/1.4.0": {
-      "sha512": "hGX//4BVw2ALDSiOHHnXwJldzMOtUnVObtyYDT0Kt0LviKrQ9fSQkh00rddaVExY/tiVLYSEsHzKRkRIOvRGAg==",
-      "type": "package",
-      "path": "sharpscss/1.4.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/net20/SharpScss.targets",
-        "build/net35/SharpScss.targets",
-        "build/net40/SharpScss.targets",
-        "lib/net20/SharpScss.dll",
-        "lib/net20/SharpScss.xml",
-        "lib/net35/SharpScss.dll",
-        "lib/net35/SharpScss.xml",
-        "lib/net40/SharpScss.dll",
-        "lib/net40/SharpScss.xml",
-        "lib/netstandard1.3/SharpScss.dll",
-        "lib/netstandard1.3/SharpScss.xml",
-        "lib/netstandard2.0/SharpScss.dll",
-        "lib/netstandard2.0/SharpScss.xml",
-        "runtimes/linux-x64/native/libsass.so",
-        "runtimes/osx-x64/native/libsass.dylib",
-        "runtimes/win-x64/native/libsass.dll",
-        "runtimes/win-x86/native/libsass.dll",
-        "sharpscss.1.4.0.nupkg.sha512",
-        "sharpscss.nuspec"
       ]
     },
     "System.Collections/4.3.0": {
@@ -7028,27 +6990,6 @@
         "version.txt"
       ]
     },
-    "System.Text.Json/4.6.0": {
-      "sha512": "4F8Xe+JIkVoDJ8hDAZ7HqLkjctN/6WItJIzQaifBwClC7wmoLSda/Sv2i6i1kycqDb3hWF4JCVbpAweyOKHEUA==",
-      "type": "package",
-      "path": "system.text.json/4.6.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Text.Json.dll",
-        "lib/net461/System.Text.Json.xml",
-        "lib/netcoreapp3.0/System.Text.Json.dll",
-        "lib/netcoreapp3.0/System.Text.Json.xml",
-        "lib/netstandard2.0/System.Text.Json.dll",
-        "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.4.6.0.nupkg.sha512",
-        "system.text.json.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "System.Text.RegularExpressions/4.3.0": {
       "sha512": "RpT2DA+L660cBt1FssIE9CAGpLFdFPuheB7pLpKpn6ZXNby7jDERe8Ua/Ne2xGiwLVG2JOqziiaVCGDon5sKFA==",
       "type": "package",
@@ -7578,7 +7519,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "LigerShark.WebOptimizer.Sass >= 3.0.40-beta",
+      "CloudinaryDotNet >= 1.15.1",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.4",
       "Microsoft.AspNetCore.Identity.UI >= 5.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.4",
@@ -7629,9 +7570,9 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
-          "LigerShark.WebOptimizer.Sass": {
+          "CloudinaryDotNet": {
             "target": "Package",
-            "version": "[3.0.40-beta, )"
+            "version": "[1.15.1, )"
           },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
