@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\css\layout\" />
     <Folder Include="wwwroot\css\pages\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>

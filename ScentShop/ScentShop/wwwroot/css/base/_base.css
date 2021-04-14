@@ -1,4 +1,6 @@
-﻿*,
+﻿@import '../abstracts/_variables.css';
+
+*,
 *::after,
 *::before {
     margin: 0;
