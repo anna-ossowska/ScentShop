@@ -8,5 +8,43 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+    position: relative;
+}
 
+.banner-header h2, h3, .banner-price {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+.banner-header h2 {
+    font-size: 7rem;
+    margin-bottom: 0.2rem;
+}
+
+.banner-header h3 {
+    font-size: 2.7rem;
+}
+
+.banner-price {
+    font-size: 2.7rem;
+    margin-bottom: 0.7rem;
+}
+
+.banner-description p {
+    font-size: 1.25rem;
+    margin-bottom: 1.3rem;
+    text-align: justify;
+}
+
+/* Positioning */
+.banner-header {
+    position: absolute;
+    top: 4rem;
+    left: 7.5rem;
+}
+
+.banner-description {
+    position: absolute;
+    top: 16.75rem;
+    left: 48.5rem;
 }

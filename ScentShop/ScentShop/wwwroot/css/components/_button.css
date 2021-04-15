@@ -1,19 +1,35 @@
 ﻿@import '../abstracts/_variables.css';
 
-.btn, .btn:link, .btn:visited {
+.bt, .bt:link, .bt:visited {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-transform: uppercase;
     display: inline-block;
-    padding: 0.5rem 1.5rem;
-
-    border-radius: 0.05rem;
+    padding: 0.7rem 1.7rem;
     text-decoration: none;
+    cursor: pointer;
+    border-radius: 0.05rem;
+    border: none;
+    transition: all 0.2s;
 }
 
-.btn--grey {
+.bt:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bt--main {
+    background-color: var(--color-purple);
+    color: #fff;
+}
+
+.bt--grey {
     background-color: var(--color-light-grey-2);
     color: #fff;
 }
 
-.btn--brown {
+.bt--brown {
     background-color: var(--color-brown);
     color: #fff;
 }
