@@ -11,13 +11,36 @@
     cursor: pointer;
     border-radius: 0.05rem;
     border: none;
-    transition: all 0.2s;
+    position: relative;
+    transition: all 0.25s;
 }
 
 .bt:hover {
-    text-decoration: none;
-    color: #fff;
+  color: #fff;
+  transform: scale(1.03);
 }
+
+/* Create a shape outside of the button range*/
+.bt::after {
+    content: '';
+    background: #fff;
+    height: 155px;
+    left: -6rem;
+    opacity: 0.3;
+    position: absolute;
+    top: -3.5rem;
+    transform: rotate(35deg);
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+}
+
+/* Move rotated shape from left to right */
+.bt:hover::after {
+    left: 120%;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 
 .bt--main {
     background-color: var(--color-purple);
@@ -33,3 +56,5 @@
     background-color: var(--color-brown);
     color: #fff;
 }
+
+
