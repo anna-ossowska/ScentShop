@@ -1,0 +1,12 @@
+﻿@import '../abstracts/_variables.css';
+@import '../base/_animations.css';
+
+.banner {
+    background-image: url('/images/banner.png');
+    background-position: top;
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+
+}
