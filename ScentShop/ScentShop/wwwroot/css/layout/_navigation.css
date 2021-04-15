@@ -33,7 +33,7 @@
     text-align: center;
 }
 
-/* Show nested ul*/
+/* Show nested ul */
 #navig ul li:hover ul {
     display: block;
     position: absolute;
@@ -54,7 +54,7 @@
     background-color: var(--color-light-blue-1);
 }
 
-/*Removing the style from html button*/
+/*Removing the style from html button */
 #logout {
     all: unset;
     cursor: pointer;
@@ -63,7 +63,7 @@
 .navig-logo,
 .navig-logo:active,
 .navig-logo:hover {
-    /*positioning to the center*/
+    /* positioning to the center */
     position: absolute;
     margin-top: 1.6rem;
     left: 50%;
@@ -79,21 +79,18 @@
     text-decoration: none;
 }
 
-.shopping-cart-icon {
-    color: var(--color-dark-grey-1);
+.bi-person {
+    fill: var(--color-dark-grey-2);
+    margin-top: 0.1rem;
 }
 
-.shopping-cart-link,
-.shopping-cart-link:active,
-.shopping-cart-link:hover {
-    text-decoration: none;
-    color: var(--color-dark-grey-1);
+.bi-basket3 {
+    fill: var(--color-dark-grey-2);
 }
 
-/*Naving secondary*/
-
+/*Naving secondary */
 #navig-secondary {
-    line-height: 1.5;
+    line-height: 2.5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,7 +98,7 @@
 }
 
 #navig-secondary .navig-container {
-    width: 33rem;
+    width: 27rem;
 }
 
 #navig-secondary ul {
@@ -115,4 +112,46 @@
 #navig-secondary ul li {
     display: inline-block;
     padding: 0 0.5rem;
+    position: relative;
+    transition: all 2s ease-out;
+}
+
+#navig-secondary ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--color-dark-grey-1);
+    margin-top: 1rem;
+}
+
+#navig-secondary ul li a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    border-radius: 10rem;
+    top: 2.9rem;
+    width: 80%;
+    height: 0;
+    background-color: var(--color-light-grey-2);
+    transition: all 0.2s linear;
+}
+
+#navig-secondary ul li a:hover::after
+{
+    height: 0.2rem;
+    background-color: var(--color-light-grey-2);
+}
+
+.active {
+    position: relative;
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 0.2rem;
+    top: 2.9rem;
+    background-color: var(--color-brown);
+    border-radius: 10rem;
 }

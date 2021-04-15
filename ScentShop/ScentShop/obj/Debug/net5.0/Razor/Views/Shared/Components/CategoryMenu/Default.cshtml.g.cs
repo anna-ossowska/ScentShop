@@ -26,8 +26,15 @@ using ScentShop.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\Views\_ViewImports.cshtml"
+using ScentShop.Utilities;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d2ee8f264190484e7495b64e304fe513f50a68d3", @"/Views/Shared/Components/CategoryMenu/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b4fc205c5df0c16a6106a0f0a8bc103d1c5d017c", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1176cd2a4e1d2057cb7f0b63a83271defc30c9fd", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_CategoryMenu_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Category>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Perfume", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -61,7 +68,7 @@ using ScentShop.ViewModels;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n<h3>Sort by category</h3>\r\n<li class=\"dropdown\" style=\"list-style-type: none;\">\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2ee8f264190484e7495b64e304fe513f50a68d35332", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2ee8f264190484e7495b64e304fe513f50a68d35532", async() => {
                 WriteLiteral("Category<b class=\"caret\"></b>");
             }
             );
@@ -91,7 +98,7 @@ using ScentShop.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("            <li>\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2ee8f264190484e7495b64e304fe513f50a68d37321", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2ee8f264190484e7495b64e304fe513f50a68d37521", async() => {
 #nullable restore
 #line 13 "C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\Views\Shared\Components\CategoryMenu\Default.cshtml"
                                                           Write(category.CategoryName);
@@ -138,7 +145,7 @@ using ScentShop.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("        <li class=\"divider\"></li>\r\n        <li>\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2ee8f264190484e7495b64e304fe513f50a68d310316", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2ee8f264190484e7495b64e304fe513f50a68d310516", async() => {
                 WriteLiteral("View all perfumes");
             }
             );
