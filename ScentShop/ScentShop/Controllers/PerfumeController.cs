@@ -40,23 +40,31 @@ namespace ScentShop.Controllers
             perfumes = _perfumeRepository.GetAllPerfumes();
             currentCategory = "All Perfumes";
 
+            if (string.IsNullOrEmpty(category))
+            {
+                perfumes = _perfumeRepository.GetAllPerfumes();
+                currentCategory = "All Perfumes";
+            }
+            else
+            {
+                perfumes = _perfumeRepository.GetAllPerfumes()
+                    .Where(p => p.Category.CategoryName == category);
+
+                currentCategory = _categoryRepository.GetAllCategories()
+                    .FirstOrDefault(c => c.CategoryName == category).CategoryName;
+            }
+
             if (!string.IsNullOrEmpty(searchString))
             {
                 perfumes = _perfumeRepository.GetAllPerfumesByName(searchString);
             }
 
-            if (!string.IsNullOrEmpty(category))
-            {
-                currentCategory = _categoryRepository.GetAllCategories()
-                    .FirstOrDefault(c => c.CategoryName == category).CategoryName;
-            }
 
             var perfumeListViewModel = new PerfumesListViewModel
             {
                 Perfumes = perfumes,
                 SearchString = searchString,
                 CurrentCategory = currentCategory
-
             };
 
             return View(perfumeListViewModel);
