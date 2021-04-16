@@ -9,14 +9,16 @@
 
 .cardindex-side {
     height: 29rem;
+    transition: all 0.8s ease;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0,0, 0.15);
-    transition: all 0.8s ease;
+    border-radius: 3px;
+   
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
 .cardindex-side--front {
@@ -33,6 +35,6 @@
     transform: rotateY(-180deg);
 }
 
-.cardindex:hover .cardindex--side--back {
+.cardindex:hover .cardindex-side--back {
     transform: rotateY(0);
 }
