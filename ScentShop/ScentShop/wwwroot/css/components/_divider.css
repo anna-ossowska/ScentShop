@@ -1,0 +1,27 @@
+﻿@import '../abstracts/_variables.css';
+
+.divider {
+    position: relative;
+    width: 100%;
+    border-bottom: 0.5px solid var(--color-light-grey-2);
+    display: flex;
+    justify-content: center;
+}
+
+.divider::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 5%;
+    height: 0.2rem;
+    top: -1.5px;
+    background-color: var(--color-brown);
+    border-radius: 10rem;
+}
+
+.divider-text {
+    font-family: 'Lora', serif;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 1.5rem;
+}

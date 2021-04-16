@@ -1,18 +1,39 @@
 ﻿@import '../abstracts/_variables.css';
 @import '../base/_animations.css';
 
-.banner {
-    background-image: url('/images/banner.png');
+.banner-container {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1.55fr 1fr 1.55fr;
+    grid-template-areas: "header image description";
+}
+
+.banner-image {
+    grid-area: image;
+    background-image: url('/images/banner-test3.png');
     background-position: top;
     background-size: auto;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 71vh;
     width: 100%;
-    position: relative;
 }
 
+.banner-header {
+    grid-area: header;
+    justify-self: end;
+    padding-top: 4rem;
+}
+
+.banner-description {
+    grid-area: description;
+    align-self: end;
+    padding-bottom: 3.5rem;
+    width: 20rem;
+}
+
+/* Text style */
 .banner-header h2, h3, .banner-price {
-    font-family: 'Lora', serif;
+    font-family: 'lora', serif;
     font-weight: 400;
 }
 
@@ -27,7 +48,7 @@
 }
 
 .banner-price {
-    font-size: 2.7rem;
+    font-size: 2rem;
     margin-bottom: 0.7rem;
 }
 
@@ -35,17 +56,4 @@
     font-size: 1.25rem;
     margin-bottom: 1.3rem;
     text-align: justify;
-}
-
-/* Positioning */
-.banner-header {
-    position: absolute;
-    top: 4rem;
-    left: 7.5rem;
-}
-
-.banner-description {
-    position: absolute;
-    top: 16.75rem;
-    left: 48.5rem;
 }
