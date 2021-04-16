@@ -17,7 +17,67 @@
     <h3 class="divider-text">Best Sellers</h3>
 </div>
 
-@foreach (var perfume in Model.PerfumesOfTheWeek)
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="cardindex">
+                <div class="cardindex-side cardindex-side--front">
+                    <div class="cardindex-picture"></div>
+                    <div class="cardindex-header">
+                        <h3>Eternity</h3>
+                        <h4>Calvin Klein</h4>
+                    </div>
+                    <div class="cardindex-details">
+                        <ul>
+                            <li>50 ml</li>
+                            <li>for Her</li>
+                            <li>Freesia, Mandarin, Sage, Muguet</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cardindex-side cardindex-side--back">
+                    <div class="cardindex-cta">
+                        <div class="cardindex-pricebox">
+                            <p class="price-only">Only</p>
+                            <p class="price-value">$255</p>
+                        </div>
+                        <a class="bt bt--brown" href="#">Buy now</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+@*<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="card-index">
+
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="card-index">
+
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="card-index">
+
+            </div>
+        </div>
+    </div>
+</div>*@
+
+
+
+
+
+
+
+
+@*@foreach (var perfume in Model.PerfumesOfTheWeek)
 {
     <partial name="_PerfumeCard" model="perfume" />
-}
+}*@

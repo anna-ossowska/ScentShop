@@ -1,0 +1,38 @@
+﻿@import '../abstracts/_variables.css';
+
+.cardindex {
+    height: 29rem;
+    position: relative;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+}
+
+.cardindex-side {
+    height: 29rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0,0, 0.15);
+    transition: all 0.8s ease;
+}
+
+.cardindex-side--front {
+    background-color: #fff;
+    border: 0.5px solid var(--color-light-grey-2);
+}
+
+.cardindex-side--back {
+    background-color: var(--color-purple);
+    transform: rotateY(180deg);
+}
+
+.cardindex:hover .cardindex-side--front {
+    transform: rotateY(-180deg);
+}
+
+.cardindex:hover .cardindex--side--back {
+    transform: rotateY(0);
+}

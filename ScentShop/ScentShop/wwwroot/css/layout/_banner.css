@@ -10,7 +10,7 @@
 
 .banner-image {
     grid-area: image;
-    background-image: url('/images/banner-test3.png');
+    background-image: url('/images/banner.png');
     background-position: top;
     background-size: auto;
     background-repeat: no-repeat;
