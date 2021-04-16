@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ScentShop.Models;
 
 namespace ScentShop.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210416192709_UpdatingPerfumeModel")]
+    partial class UpdatingPerfumeModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -769,19 +771,6 @@ namespace ScentShop.Migrations
                         new
                         {
                             Id = 30,
-                            Brand = "Nautica",
-                            Capacity = 50,
-                            CategoryId = 2,
-                            Description = "The composition opens with cold, green notes of leaves and apple. There is a tender dewy mimose in the heart, which is blended with watery note of lotus and an interesting accord of linen sail of a yacht. The composition is laid on a woody base, combined of cedar, moss, musk and amber.",
-                            InStock = true,
-                            IsPerfumeOfTheWeek = false,
-                            KeyNotes = "Apple, Lotus, Cedar",
-                            Name = "Voyage",
-                            Price = 700m
-                        },
-                        new
-                        {
-                            Id = 31,
                             Brand = "Giorgio Armani",
                             Capacity = 100,
                             CategoryId = 2,
@@ -791,6 +780,19 @@ namespace ScentShop.Migrations
                             KeyNotes = "Bergamot, Neroli, Green Tangerine",
                             Name = "Acqua di Gio",
                             Price = 150m
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Brand = "Nautica",
+                            Capacity = 50,
+                            CategoryId = 2,
+                            Description = "The composition opens with cold, green notes of leaves and apple. There is a tender dewy mimose in the heart, which is blended with watery note of lotus and an interesting accord of linen sail of a yacht. The composition is laid on a woody base, combined of cedar, moss, musk and amber.",
+                            InStock = true,
+                            IsPerfumeOfTheWeek = false,
+                            KeyNotes = "Apple, Lotus, Cedar",
+                            Name = "Voyage",
+                            Price = 700m
                         });
                 });
 

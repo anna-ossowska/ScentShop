@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ScentShop.Models;
 
 namespace ScentShop.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210416190319_RebuildingSeedFile")]
+    partial class RebuildingSeedFile
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -370,6 +372,9 @@ namespace ScentShop.Migrations
                     b.Property<bool>("InStock")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsDiscounted")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("IsPerfumeOfTheWeek")
                         .HasColumnType("bit");
 
@@ -396,7 +401,9 @@ namespace ScentShop.Migrations
                             Capacity = 50,
                             CategoryId = 1,
                             Description = "Chance is a fragrance created like a constellation, a composition like an olfactory sphere that opens up in an infinite movement. At the heart of this sphere is a sensuous balance warmed by Vanilla, with pronounced Jasmine Absolute and Iris. A mysterious alchemy, heightened by the intensity of White Musk.",
+                            ImageThumbnailUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618217350/ScentShop/card-3_chnyqj.png",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = true,
                             KeyNotes = "Jasmine, Pink Pepper, Vanilla",
                             Name = "Chance",
@@ -410,6 +417,7 @@ namespace ScentShop.Migrations
                             CategoryId = 1,
                             Description = "With its unprecedented use of aldehydes, which add layers of complexity, N°5 was the world’s first abstract fragrance. The Eau de Parfum draws inspiration from the Parfum with which it shares its floral aldehyde signature. This floral bouquet composed around May Rose and Jasmine features bright citrus top notes. Aldehydes create a unique presence while the smooth touch of Bourbon Vanilla leaves an incredibly sensual trail.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Aldehydes, Jasmine, Sandalwood",
                             Name = "N°5",
@@ -423,6 +431,7 @@ namespace ScentShop.Migrations
                             CategoryId = 1,
                             Description = "This fragrance opens with the exotic, floral-fruity notes of ylang ylang, while Damascus rose, and both Grasse jasmine and Indian jasmine sambac exude a seductive warmth. This scent is the ultimate expression of femininity and luxury and is floral yet mysterious, a confident signature to celebrate your feminine allure.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Ylang Ylang, Damascus Rose, Jasmine",
                             Name = "J'adore",
@@ -436,6 +445,7 @@ namespace ScentShop.Migrations
                             CategoryId = 1,
                             Description = "This eau de parfum is a floral declaration of love. In the heart of the perfume, the fresh, sensual beauty of the Grasse rose combines with the boldness of Damascus rose. They are woven with Calabrian bergamot, vivid rosewood from French Guiana, and pink pepper from Réunion Island.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Grasse Rose, Bergamot, Rosewood",
                             Name = "Miss Dior",
@@ -449,6 +459,7 @@ namespace ScentShop.Migrations
                             CategoryId = 1,
                             Description = "A sumptuous white floral Gorgeous Gardenia is Gucci’s faithful creation of the perfect gardenia. The Gorgeous Gardenia woman exudes a sultry sensuality that is lushly enticing. Men are drawn to her as bees are to a blossoming flower.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Red Berries, Pear, White Gardenia",
                             Name = "Flora",
@@ -462,6 +473,7 @@ namespace ScentShop.Migrations
                             CategoryId = 1,
                             Description = "This fragrance contains notes of sparkling Mediterranean citruses that radiate from the top, while the perfume‘s feminine white floral heart is illuminated with dewy petals underscored with the lasting signature notes of the original essence. It is a fresh and bright scent that unfolds with a sheer sensuality.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Bergamot, Casablanca Lily, Sandalwood",
                             Name = "Bamboo",
@@ -475,6 +487,7 @@ namespace ScentShop.Migrations
                             CategoryId = 1,
                             Description = "Made with the most precious natural ingredients, expressing notes of iris, patchouli, praline, and vanilla, this feminine, complex scent is the modern interpretation of an oriental fragrance with a twist of gourmand.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Iris, Vanilla, Praline",
                             Name = "La Vie Est Belle",
@@ -488,6 +501,7 @@ namespace ScentShop.Migrations
                             CategoryId = 1,
                             Description = "Michael Kors Wonderlust is an oriental gourmand fragrance that captures an infinite desire for discovery. A blend of luxurious blossoms mingled with delectably spiced notes charts a course to far-off destinations, instantly transporting you with each ingredient.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Almond Cream, Dianthus",
                             Name = "Wonderlust",
@@ -501,6 +515,7 @@ namespace ScentShop.Migrations
                             CategoryId = 1,
                             Description = "Built on a platform of rich amber, this contrasting fragrance is subtly woven with the clean smell of barber's soap. With top notes that evoke a natural, classic cologne - a rich blend of fresh mandarin, bergamot, and cardamom that melds into the sensual mid notes of patchouli, tonka bean, and vanilla; and finishes with the clean, leathery notes of vetiver, neroli, orange blossom, saffron, and suede, Amber Pour Homme is a fragrance for the self-assured man.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Almond Cream, Dianthus",
                             Name = "Wood Sage & Sea Salt",
@@ -514,6 +529,7 @@ namespace ScentShop.Migrations
                             CategoryId = 1,
                             Description = "This long-lasting eau de parfum centers around timeless orange flower and neroli mixed with a hint of pink pepper. Playful and feminine tones inspired by the flowers of Grasse are complemented by an airy and soft layer of honey and musk, which wraps you with a second-skin effect.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Neroli, Orange Flower, Pink Pepper",
                             Name = "Rag & Bone",
@@ -527,6 +543,7 @@ namespace ScentShop.Migrations
                             CategoryId = 1,
                             Description = "Sparkling notes of pink pepper and mandarin orange effervesce into a fantasy of rose and jasmine, finding a fairy tale ending in the sensual embrace of woody musk and patchouli.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Lily, White Floral",
                             Name = "Romance",
@@ -540,6 +557,7 @@ namespace ScentShop.Migrations
                             CategoryId = 1,
                             Description = "This perfume is lavished with shimmering freshness, honey, rum, and a dramatic floral veil, and it lives in Black Orchid’s world of glamorous mystique, while exuding its own ultra-feminine essence.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Orange Blossom, Hyacinth, Jonquil",
                             Name = "Velvet Orchid",
@@ -553,6 +571,7 @@ namespace ScentShop.Migrations
                             CategoryId = 1,
                             Description = "The composition opens with fresh citrus and green notes, that is followed by the note of violet and lily-of-the-valley. The note of carnation with its spiciness gives the floral heart slightly peppery accord. The final notes are gentle with powdery heliotrope, pink sandalwood and transparent musky notes.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = true,
                             KeyNotes = "Citrus, Lily, Pink Sandalwood",
                             Name = "Eternity",
@@ -566,6 +585,7 @@ namespace ScentShop.Migrations
                             CategoryId = 1,
                             Description = "A sweet take on a floral fragrance, this women's perfume opens with luminous notes of blackcurrant nectar and mandarin. Orange blossom forms the heart of the fragrance and warm vanilla anchors the irresistible blend for a lasting scent.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Citrus, Lily, Pink Sandalwood",
                             Name = "Si",
@@ -579,6 +599,7 @@ namespace ScentShop.Migrations
                             CategoryId = 1,
                             Description = "In this new olfactive journey, ylang-ylang is amplified while rum absolute and black plum become even more pronounced, augmenting the sensuality of TOM FORD‘s original perfume, Black Orchid Eau de Parfum.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Black Truffle, Black Orchid, Patchouli",
                             Name = "Black Orchid",
@@ -592,6 +613,7 @@ namespace ScentShop.Migrations
                             CategoryId = 2,
                             Description = "The fragrance opens up with neroli and citrusy hints of mandarin and bergamot.At the heart is lavender.Touches of tobacco and tonka bean provide structure for the last dry notes of wood.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Sandalwood, Tonka Bean, Tobacco",
                             Name = "Pour Homme",
@@ -605,6 +627,7 @@ namespace ScentShop.Migrations
                             CategoryId = 2,
                             Description = "A woody, aromatic fragrance for the man who defies convention; a provocative blend of citrus and woods that liberates the senses. Fresh, clean, and profoundly sensual.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Citrus Accord, Labdanum, Sandalwood Cedar",
                             Name = "Bleu de Chanel",
@@ -618,6 +641,7 @@ namespace ScentShop.Migrations
                             CategoryId = 2,
                             Description = "A radically fresh composition, Sauvage is both raw and noble. Radiant top notes burst with the juicy freshness of Calabrian bergamot, while amberwood unleashes a powerfully woody trail. Sauvage is a fragrance inspired by wide-open spaces under a blue sky that dominates a white-hot desert landscape.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Bergamot, Pepper, Amberwood",
                             Name = "Sauvage",
@@ -631,6 +655,7 @@ namespace ScentShop.Migrations
                             CategoryId = 2,
                             Description = "The Dior Homme Eau de Toilette is an alluring combination of power and freshness. It is intensely woody and masculine, taking hold and leaving a lasting impression.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Cedar, Haitian Vetiver, Patchouli Heart",
                             Name = "Homme",
@@ -644,6 +669,7 @@ namespace ScentShop.Migrations
                             CategoryId = 2,
                             Description = "Lucid and willful, Eau Sauvage is the perfume of the cult of elegance, refinement, and good humor. With the zest of citrus fruits for freshness, an invigorating bouquet of herbs, a hint of jasmine and vetiver for the sensual touch, and oakmoss to conquer and seduce, it will remain a fresh, discreet classic.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Lemon, Rosemary, Petit Grain",
                             Name = "Eau Sauvage",
@@ -657,6 +683,7 @@ namespace ScentShop.Migrations
                             CategoryId = 2,
                             Description = "A resolutely contemporary fragrance characterized by a meeting of extremes. Fresh, elegant notes blend in perfect harmony with bolder, more virile overtones to create a scent that is warm, subtle, and distinguished.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Bergamot, Hawthorne, Honeysuckle",
                             Name = "Fahrenheit",
@@ -670,6 +697,7 @@ namespace ScentShop.Migrations
                             CategoryId = 2,
                             Description = "Elegant and sensual, this perfume is decidedly modern and uniquely timeless all at once. The spicy fragrance features fresh top notes of grapefruit, coriander, and basil; a warm heart of cardamom and ginger; and a deep masculine base of tobacco, amber, and cedarwood.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Cardamom, Cedarwood, Ginger, Tobacco",
                             Name = "The One For Men",
@@ -683,6 +711,7 @@ namespace ScentShop.Migrations
                             CategoryId = 2,
                             Description = "Terre d’Hermès is a symbolic narrative exploring raw material and its metamorphosis. A novel that expresses the alchemical power of the elements. An eau between earth and sky. A journey imbued with strength and poetry. Woody, vegetal, mineral.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Grapefruit Accord, Black Peppers, Flint",
                             Name = "Terre d’Hermès",
@@ -696,6 +725,7 @@ namespace ScentShop.Migrations
                             CategoryId = 2,
                             Description = "The perfumer Daniela Roche-Andrier created the composition in four basic accords : Amber – the main accord, rich and complex oriental base which includes amber, vanilla, labdanum, Tonka and patchouli; Fougere – or the aromatic accord with a remarkable soapy note, includes notes of pelargonium, vetiver, orange blossom and myrrh at the heart; Cologne – the refreshing citrusy top of bergamot, mandarin, neroli and cardamom; Leather – leather note is present at the base of the composition (leather, saffron and sandalwood).",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Bergamot Oil, Mandarin, Cardamom",
                             Name = "Amber",
@@ -709,6 +739,7 @@ namespace ScentShop.Migrations
                             CategoryId = 2,
                             Description = "The heart of the fragrance is aromatic cypress and clary sage which add another level of sophistication, freshness, and sensuality.  The scent peaks with the salty mineral Deep Ocean Accord that energizes and activates an even deeper level of freshness.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Hawaiian Green Mango, Cypress Oil",
                             Name = "Polo Deep Blue",
@@ -722,6 +753,7 @@ namespace ScentShop.Migrations
                             CategoryId = 2,
                             Description = "A composition of exotic, smoky woods including rare oud, sandalwood, rosewood, eastern spices, and sensual amber—revealing oud‘s rich and compelling power.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Rare Oud Wood, Chinese Pepper, Vanilla",
                             Name = "Oud Wood",
@@ -731,10 +763,25 @@ namespace ScentShop.Migrations
                         {
                             Id = 27,
                             Brand = "Tom Ford",
+                            Capacity = 100,
+                            CategoryId = 2,
+                            Description = "A composition of exotic, smoky woods including rare oud, sandalwood, rosewood, eastern spices, and sensual amber—revealing oud‘s rich and compelling power.",
+                            InStock = true,
+                            IsDiscounted = false,
+                            IsPerfumeOfTheWeek = false,
+                            KeyNotes = "Rare Oud Wood, Chinese Pepper, Vanilla",
+                            Name = "Oud Wood",
+                            Price = 250m
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Brand = "Tom Ford",
                             Capacity = 50,
                             CategoryId = 2,
                             Description = "This perfume's rich blend of spicy heat and glowing citrus gives way to Indian kulfi, wrapped in rose absolute, jasmine accord, and orange flower. It also contains notes of extravagant amber with sandalwood and vanilla ember for a creamy, woody finish.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Cardamom, Orange Flower, Sandalwood",
                             Name = "Noir Extreme",
@@ -742,12 +789,13 @@ namespace ScentShop.Migrations
                         },
                         new
                         {
-                            Id = 28,
+                            Id = 29,
                             Brand = "Versace",
                             Capacity = 100,
                             CategoryId = 2,
                             Description = "New and exquisite qualities of natural citrus, aquatic notes, and violet leaves combine with modern hints of fig leaf to give an incisive, Mediterranean freshness.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Aquatic Notes, Bergamot, Patchouli",
                             Name = "Dylan Blue",
@@ -755,29 +803,17 @@ namespace ScentShop.Migrations
                         },
                         new
                         {
-                            Id = 29,
+                            Id = 30,
                             Brand = "Versace",
                             Capacity = 100,
                             CategoryId = 2,
                             Description = "The new fragrance for men, Versace Pour Homme, blends essential ingredients of Mediterranean origin to hit aromatic notes.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = true,
                             KeyNotes = "Bergamot, Neroli, Citron of Diamante",
                             Name = "Pour Homme",
                             Price = 200m
-                        },
-                        new
-                        {
-                            Id = 30,
-                            Brand = "Nautica",
-                            Capacity = 50,
-                            CategoryId = 2,
-                            Description = "The composition opens with cold, green notes of leaves and apple. There is a tender dewy mimose in the heart, which is blended with watery note of lotus and an interesting accord of linen sail of a yacht. The composition is laid on a woody base, combined of cedar, moss, musk and amber.",
-                            InStock = true,
-                            IsPerfumeOfTheWeek = false,
-                            KeyNotes = "Apple, Lotus, Cedar",
-                            Name = "Voyage",
-                            Price = 700m
                         },
                         new
                         {
@@ -787,10 +823,25 @@ namespace ScentShop.Migrations
                             CategoryId = 2,
                             Description = "The fragrance for men is a scent of freedom, full of wind and water. The composition is built of a perfect harmony of sweet and salty notes of sea water and nuances of sunny warmth on your skin. Aqua di Gio is full of scorching Mediterranean sun. Bitter citrus with aromatic nuance of rosemary intertwines with salty, sea nuances and pellucid hedione. Sharp notes of spices are softened by woody base with warm, musky trail.",
                             InStock = true,
+                            IsDiscounted = false,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Bergamot, Neroli, Green Tangerine",
                             Name = "Acqua di Gio",
                             Price = 150m
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Brand = "Nautica",
+                            Capacity = 50,
+                            CategoryId = 2,
+                            Description = "The composition opens with cold, green notes of leaves and apple. There is a tender dewy mimose in the heart, which is blended with watery note of lotus and an interesting accord of linen sail of a yacht. The composition is laid on a woody base, combined of cedar, moss, musk and amber.",
+                            InStock = true,
+                            IsDiscounted = false,
+                            IsPerfumeOfTheWeek = false,
+                            KeyNotes = "Apple, Lotus, Cedar",
+                            Name = "Voyage",
+                            Price = 700m
                         });
                 });
 
