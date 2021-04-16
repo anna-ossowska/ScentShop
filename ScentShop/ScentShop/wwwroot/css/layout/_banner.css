@@ -32,11 +32,6 @@
 }
 
 /* Text style */
-.banner-header h2, h3, .banner-price {
-    font-family: 'lora', serif;
-    font-weight: 400;
-}
-
 .banner-header h2 {
     font-size: 7rem;
     margin-bottom: 0.2rem;

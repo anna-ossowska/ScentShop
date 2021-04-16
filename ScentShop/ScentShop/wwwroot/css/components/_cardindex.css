@@ -1,14 +1,14 @@
 ﻿@import '../abstracts/_variables.css';
 
 .cardindex {
-    height: 29rem;
+    height: 32rem;
     position: relative;
     perspective: 150rem;
     -moz-perspective: 150rem;
 }
 
 .cardindex-side {
-    height: 29rem;
+    height: 32rem;
     transition: all 0.8s ease;
     width: 100%;
     position: absolute;
@@ -16,14 +16,13 @@
     left: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-radius: 3px;
-   
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    border-radius: 1px;
+    box-shadow: 0 1.5rem 1.75rem rgba(0, 0, 0, 0.15);
 }
 
 .cardindex-side--front {
     background-color: #fff;
-    border: 0.5px solid var(--color-light-grey-2);
+    border: 0.5px solid var(--color-light-grey-1);
 }
 
 .cardindex-side--back {
@@ -31,10 +30,70 @@
     transform: rotateY(180deg);
 }
 
-.cardindex:hover .cardindex-side--front {
+/*.cardindex:hover .cardindex-side--front {
     transform: rotateY(-180deg);
 }
 
 .cardindex:hover .cardindex-side--back {
     transform: rotateY(0);
+}
+*/
+
+/* Front look */
+.cardindex-side .cardindex-bg {
+    height: 40%;
+    background-color: var(--color-light-blue-1);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.cardindex-side .cardindex-picture {
+    background-image: url('/images/cardindex-2.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.perfume-name {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.perfume-brand {
+    text-align: center;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.card-divider {
+    border: 0.25px solid var(--color-light-blue-2);
+    margin: 0rem 1rem 0.5rem;
+}
+
+
+.cardindex-details {
+    height: 5rem;
+}
+
+.cardindex-details ul {
+    list-style: none;
+    text-align: center;
+    padding-inline-start: 0;
+    padding: 0.25rem 2rem;
+}
+
+.cardindex-details li {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.cardindex-details li:nth-child(2) {
+    font-weight: bold;
+    color: var(--color-dark-blue-1);
 }
