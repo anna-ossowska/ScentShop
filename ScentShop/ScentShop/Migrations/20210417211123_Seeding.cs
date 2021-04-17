@@ -7,21 +7,6 @@ namespace ScentShop.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_Perfumes_Image_ImageId",
-                table: "Perfumes");
-
-            migrationBuilder.DropTable(
-                name: "Image");
-
-            migrationBuilder.DropIndex(
-                name: "IX_Perfumes_ImageId",
-                table: "Perfumes");
-
-            migrationBuilder.DropColumn(
-                name: "ImageId",
-                table: "Perfumes");
-
             migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "CategoryId", "CategoryName" },
@@ -237,39 +222,6 @@ namespace ScentShop.Migrations
                 table: "Categories",
                 keyColumn: "CategoryId",
                 keyValue: 2);
-
-            migrationBuilder.AddColumn<int>(
-                name: "ImageId",
-                table: "Perfumes",
-                type: "int",
-                nullable: false,
-                defaultValue: 0);
-
-            migrationBuilder.CreateTable(
-                name: "Image",
-                columns: table => new
-                {
-                    ImageId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Content = table.Column<byte[]>(type: "varbinary(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Image", x => x.ImageId);
-                });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Perfumes_ImageId",
-                table: "Perfumes",
-                column: "ImageId");
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_Perfumes_Image_ImageId",
-                table: "Perfumes",
-                column: "ImageId",
-                principalTable: "Image",
-                principalColumn: "ImageId",
-                onDelete: ReferentialAction.Cascade);
         }
     }
 }
