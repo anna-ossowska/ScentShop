@@ -32,7 +32,7 @@ namespace ScentShop.Controllers
         //}
 
 
-        public ViewResult List(string category, string searchString)
+        public ViewResult List(string category, string searchString, string sortOrder)
         {
             IEnumerable<Perfume> perfumes;
             string currentCategory;
@@ -59,6 +59,38 @@ namespace ScentShop.Controllers
                 perfumes = _perfumeRepository.GetAllPerfumesByName(searchString);
             }
 
+            ViewBag.NameSortParam = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.PriceSortParam = sortOrder == "price_desc" ? "price_asc" : "price_desc";
+            ViewBag.BrandSortParam = sortOrder == "brand_desc" ? "brand_asc" : "brand_desc";
+            ViewBag.CapacitySortParam = sortOrder == "capacity_desc" ? "capacity_asc" : "capacity_desc";
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    perfumes = perfumes.OrderByDescending(p => p.Name);
+                    break;
+                case "price_asc":
+                    perfumes = perfumes.OrderBy(p => p.Price);
+                    break;
+                case "price_desc":
+                    perfumes = perfumes.OrderByDescending(p => p.Price);
+                    break;
+                case "brand_asc":
+                    perfumes = perfumes.OrderBy(p => p.Brand);
+                    break;
+                case "brand_desc":
+                    perfumes = perfumes.OrderByDescending(p => p.Brand);
+                    break;
+                case "capacity_asc":
+                    perfumes = perfumes.OrderBy(p => p.Capacity);
+                    break;
+                case "capacity_desc":
+                    perfumes = perfumes.OrderByDescending(p => p.Capacity);
+                    break;
+                default:
+                    perfumes = perfumes.OrderBy(p => p.Name);
+                    break;
+            }
 
             var perfumeListViewModel = new PerfumesListViewModel
             {
@@ -69,7 +101,6 @@ namespace ScentShop.Controllers
 
             return View(perfumeListViewModel);
         }
-
 
         public IActionResult Details(int id)
         {
