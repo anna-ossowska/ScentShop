@@ -13,21 +13,21 @@
             </div>
 
             <div class="list-cards">
-                <div class="list-card">
-                    <div class="list-card-bg">
-                        <div class="list-card-picture"></div>
+                @foreach (var perfume in Model.Perfumes)
+                {
+                <a class="list-card-link" asp-controller="Perfume" asp-action="Details" asp-route-id="@perfume.Id">
+                    <div class="list-card">
+                        <div class="list-card-bg">
+                            <div class="list-card-picture"></div>
+                        </div>
+                        <div class="list-card-details">
+                            <h3 class="name">@perfume.Name</h3>
+                            <p class="brand">@perfume.Brand</p>
+                            <p class="price">$@perfume.Price</p>
+                        </div>
                     </div>
-                    <div class="list-card-details">
-                        <h3 class="name">Name</h3>
-                        <p class="brand">Brand</p>
-                        <p class="price">$100</p>
-                    </div>
-                </div>
-                <div class="list-card">Item 2</div>
-                <div class="list-card">Item 3</div>
-                <div class="list-card">Item 4</div>
-                <div class="list-card">Item 5</div>
-                <div class="list-card">Item 6</div>
+                </a>
+                }
             </div>
         </div>
     </div>

@@ -2,7 +2,18 @@
 
 .list-card {
     border: 1px solid var(--color-light-blue-3);
-    min-height: 20rem;
+    height: 20rem;
+    min-width: 10rem;
+}
+
+.list-card-link,
+.list-card-link:link,
+.list-card-link:visited,
+.list-card-link:focus
+.list-card-link:hover {
+    text-decoration: none !important;
+    color: inherit;
+    cursor: pointer;
 }
 
 .list-card-bg {
