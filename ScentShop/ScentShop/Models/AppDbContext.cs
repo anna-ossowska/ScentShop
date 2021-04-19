@@ -176,15 +176,15 @@ namespace ScentShop.Models
             modelBuilder.Entity<Perfume>().HasData(new Perfume
             {
                 Id = 11,
-                Name = "Romance",
-                Brand = "Ralph Lauren",
+                Name = "Tobacco Vanille",
+                Brand = "Tom Ford",
                 CategoryId = 1,
-                Capacity = 50,
-                Price = 178M,
-                Description = "Sparkling notes of pink pepper and mandarin orange effervesce into a fantasy of rose and jasmine, finding a fairy tale ending in the sensual embrace of woody musk and patchouli.",
+                Capacity = 100,
+                Price = 340M,
+                Description = "Tom Ford reinvents classic tobacco with creamy tonka bean, vanilla, cocoa, dry fruit accords, and sweet wood sap for a modern, opulent, and heady impression of confidence.",
                 IsPerfumeOfTheWeek = false,
                 InStock = true,
-                KeyNotes = "Lily, White Floral"
+                KeyNotes = "Tobacco Leaf, Ginger, Cocoa"
             });
 
             modelBuilder.Entity<Perfume>().HasData(new Perfume
@@ -467,6 +467,62 @@ namespace ScentShop.Models
                 IsPerfumeOfTheWeek = false,
                 InStock = true,
                 KeyNotes = "Bergamot, Neroli, Green Tangerine"
+            });
+
+            modelBuilder.Entity<Perfume>().HasData(new Perfume
+            {
+                Id = 32,
+                Name = "Boss Nuit",
+                Brand = "Hugo Boss",
+                CategoryId = 1,
+                Capacity = 100,
+                Price = 190M,
+                Description = "A radiant and sensual fragrance that opens with juicy white peach for a lively, fizzy character with an enticing sweetness. The modern top is complemented with an ultra-feminine heart comprising classic white florals and violet.",
+                IsPerfumeOfTheWeek = false,
+                InStock = true,
+                KeyNotes = "Peach, Jasmine, Almond"
+            });
+
+            modelBuilder.Entity<Perfume>().HasData(new Perfume
+            {
+                Id = 33,
+                Name = "Amouage Gold",
+                Brand = "Amouage",
+                CategoryId = 1,
+                Capacity = 100,
+                Price = 270M,
+                Description = "Amouage Gold is the first fragrance of Amouage. The top notes blend wild rose, lily-of-the-valley and silver frankincense. The heart notes include myrrh, orris and jasmine. The oriental base is of ambergris, civet, musk, cedarwood and sandalwood.",
+                IsPerfumeOfTheWeek = false,
+                InStock = true,
+                KeyNotes = "Jasmine, Orris Root, Myrrh, Musk"
+            });
+
+            modelBuilder.Entity<Perfume>().HasData(new Perfume
+            {
+                Id = 34,
+                Name = "Eros",
+                Brand = "Versace",
+                CategoryId = 2,
+                Capacity = 100,
+                Price = 98M,
+                Description = "Eros is a vibrant, and glowing combination of fresh mint leaves, Italian lemon zest, and green apple. An addictive sensuality accented by oriental, intriguing, and enveloping notes like tonka beans, amrboxan amber, geranium flower, and vanilla melds with a racy virility symbolized by woods—such as cedarwood from Atlas and Virginia.",
+                IsPerfumeOfTheWeek = false,
+                InStock = true,
+                KeyNotes = "Mint Leaves, Orange Blossom, Vanilla"
+            });
+
+            modelBuilder.Entity<Perfume>().HasData(new Perfume
+            {
+                Id = 35,
+                Name = "Bottled Night",
+                Brand = "Hugo Boss",
+                CategoryId = 2,
+                Capacity = 100,
+                Price = 155M,
+                Description = "Boss Bottled Night is an aromatic fragrance which abounds in intense and masculine woody accords. It opens with lavender and birch tree aromas, while accentuating intense heart aromas of African violet, resting on a base constructed of warm, precious woody nuances of Louro Amarelo tree and sensual musk.",
+                IsPerfumeOfTheWeek = false,
+                InStock = true,
+                KeyNotes = "Afircan Violet, Amarelo Tree, Musk"
             });
         }
 
