@@ -17,16 +17,6 @@
     grid-gap: 0.5rem;
 }
 
-.list-search {
-    border: 1px solid green;
-    margin: 1rem;
-}
-
-.list-search-box {
-    border: 1px solid purple;
-    margin: 1rem;
-}
-
 .list-cards {
     border: 1px solid orange;
     padding: 0.5rem;

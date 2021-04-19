@@ -1,20 +1,30 @@
 ﻿@model PerfumesListViewModel
 
-    <div id="list-container">
-        <div class="list-filter">
-            <div class="item">Categories</div>
-            <div class="item">Filters</div>
-            <div class="item">Popular tags</div>
+<div id="list-container">
+    <div class="list-filter">
+        <div class="item">Categories</div>
+        <div class="item">Filters</div>
+        <div class="item">Popular tags</div>
+    </div>
+
+    <div class="list-search">
+        <div class="list-search-box">
+            <form method="get">
+                <div class="search-form-group">
+                    <div class="search-group">
+                        <input asp-for="SearchString" class="search-control" placeholder="Type text here">
+                        <button class="search-bt" type="submit" value="Filter">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+   
         </div>
 
-        <div class="list-search">
-            <div class="list-search-box">
-                <div class="item">Search</div>
-            </div>
-
-            <div class="list-cards">
-                @foreach (var perfume in Model.Perfumes)
-                {
+        <div class="list-cards">
+            @foreach (var perfume in Model.Perfumes)
+            {
                 <a class="list-card-link" asp-controller="Perfume" asp-action="Details" asp-route-id="@perfume.Id">
                     <div class="list-card">
                         <div class="list-card-bg">
@@ -27,53 +37,53 @@
                         </div>
                     </div>
                 </a>
-                }
-            </div>
+            }
         </div>
     </div>
+</div>
 
 
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 
-    @await Component.InvokeAsync("CategoryMenu")
+@await Component.InvokeAsync("CategoryMenu")
 
-    <br />
-    <form method="get">
-        <div class="form-group">
-            <div class="input-group">
-                <input asp-for="SearchString" class="form-control">
-                <button class="btn btn-info" type="submit" value="Filter">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
+<br />
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input asp-for="SearchString" class="form-control">
+            <button class="btn btn-info" type="submit" value="Filter">
+                <i class="fas fa-search"></i>
+            </button>
         </div>
-    </form>
-    <br />
+    </div>
+</form>
+<br />
 
-    @Html.ActionLink("Product Name", "List", new { sortOrder = ViewBag.NameSortParam })
-    @Html.ActionLink("Price", "List", new { sortOrder = ViewBag.PriceSortParam })
-    @Html.ActionLink("Brand", "List", new { sortOrder = ViewBag.BrandSortParam })
-    @Html.ActionLink("Capacity (ml)", "List", new { sortOrder = ViewBag.CapacitySortParam })
+@Html.ActionLink("Product Name", "List", new { sortOrder = ViewBag.NameSortParam })
+@Html.ActionLink("Price", "List", new { sortOrder = ViewBag.PriceSortParam })
+@Html.ActionLink("Brand", "List", new { sortOrder = ViewBag.BrandSortParam })
+@Html.ActionLink("Capacity (ml)", "List", new { sortOrder = ViewBag.CapacitySortParam })
 
-    @foreach (var perfume in Model.Perfumes)
-    {
-        <partial name="_PerfumeCard" model="perfume" />
-    }
+@foreach (var perfume in Model.Perfumes)
+{
+    <partial name="_PerfumeCard" model="perfume" />
+}

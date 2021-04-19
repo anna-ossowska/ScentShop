@@ -1,0 +1,69 @@
+﻿@import '../abstracts/_variables.css';
+
+.list-search {
+    border: 1px solid green;
+    margin: 1rem;
+}
+
+.list-search-box {
+    border: 1px solid purple;
+    margin: 1rem;
+}
+
+.search-form-group {
+    position: relative;
+    padding: 0.5rem;
+}
+
+.search-group {
+    width: 100%;
+    height: 2.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-control {
+    height: 2.7rem;
+    width: 100%;
+    border-radius: 10rem;
+    border: 0.5px solid var(--color-dark-grey-1);
+    color: var(--color-dark-grey-2);
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+    transition: color 0.15s ease-in-out;
+    font-weight: 600;
+}
+
+.search-control:focus {
+    outline: none;
+    color: var(--color-dark-grey-1);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+::placeholder {
+    color: var(--color-dark-grey-2);
+}
+
+:-ms-input-placeholder {
+    color: var(--color-dark-grey-2);
+}
+
+::-ms-input-placeholder {
+    color: var(--color-dark-grey-2);
+}
+
+.list-search-box .search-bt {
+    all: unset;
+    cursor: pointer;
+    color: var(--color-dark-grey-2);
+    position: absolute;
+    right: 0.8rem;
+    padding: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.search-bt:hover {
+    color: var(--color-dark-grey-1);
+}
