@@ -1,0 +1,18 @@
+﻿@import '../abstracts/_variables.css';
+
+.filter-list {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.filter-header {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.filter-item a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    line-height: 2;
+}

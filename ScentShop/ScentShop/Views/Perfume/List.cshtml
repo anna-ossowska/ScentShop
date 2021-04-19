@@ -1,12 +1,37 @@
 ﻿@model PerfumesListViewModel
 
+@*Grid container*@
 <div id="list-container">
-    <div class="list-filter">
-        <div class="item">Categories</div>
-        <div class="item">Filters</div>
-        <div class="item">Popular tags</div>
+    <div class="list-sortdata">
+        @* 1. Categories *@
+        <div class="list-sortdata-group">@await Component.InvokeAsync("CategoryMenu")</div>
+        <div class="divider-horizontal"></div>
+
+        @* 2. Filter by *@
+        <div class="list-sortdata-group">
+            <h3 class="filter-header">Filter by</h3>
+            <ul class="filter-list">
+                <li class="filter-item">@Html.ActionLink("Product Name", "List", new { sortOrder = ViewBag.NameSortParam })</li>
+                <li class="filter-item">@Html.ActionLink("Price", "List", new { sortOrder = ViewBag.PriceSortParam })</li>
+                <li class="filter-item">@Html.ActionLink("Brand", "List", new { sortOrder = ViewBag.BrandSortParam })</li>
+                <li class="filter-item">@Html.ActionLink("Capacity (ml)", "List", new { sortOrder = ViewBag.CapacitySortParam })</li>
+            </ul>
+        </div>
+        <div class="divider-horizontal"></div>
+
+        @* 3. Popular tags *@
+        <div class="list-sortdata-group">
+            <h3 class="populartags-header">Popular tags</h3>
+            <span class="tag-light">Gucci</span>
+            <span class="tag-light">Dior</span>
+            <span class="tag-light">Pour Homme</span>
+            <span class="tag-light">Chanel</span>
+            <span class="tag-light">J'adore</span>
+            <span class="tag-light">Versace</span>
+        </div>
     </div>
 
+    @* Search box *@
     <div class="list-search">
         <div class="list-search-box">
             <form method="get">
@@ -19,9 +44,10 @@
                     </div>
                 </div>
             </form>
-   
+
         </div>
 
+        @* Cards *@
         <div class="list-cards">
             @foreach (var perfume in Model.Perfumes)
             {
@@ -41,49 +67,3 @@
         </div>
     </div>
 </div>
-
-
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-
-
-@await Component.InvokeAsync("CategoryMenu")
-
-<br />
-<form method="get">
-    <div class="form-group">
-        <div class="input-group">
-            <input asp-for="SearchString" class="form-control">
-            <button class="btn btn-info" type="submit" value="Filter">
-                <i class="fas fa-search"></i>
-            </button>
-        </div>
-    </div>
-</form>
-<br />
-
-@Html.ActionLink("Product Name", "List", new { sortOrder = ViewBag.NameSortParam })
-@Html.ActionLink("Price", "List", new { sortOrder = ViewBag.PriceSortParam })
-@Html.ActionLink("Brand", "List", new { sortOrder = ViewBag.BrandSortParam })
-@Html.ActionLink("Capacity (ml)", "List", new { sortOrder = ViewBag.CapacitySortParam })
-
-@foreach (var perfume in Model.Perfumes)
-{
-    <partial name="_PerfumeCard" model="perfume" />
-}

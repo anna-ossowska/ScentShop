@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<Category>
 
-<h3>Sort by category</h3>
+@*<h3>Sort by category</h3>
 <li class="dropdown" style="list-style-type: none;">
     <a asp-controller="Perfume"
        asp-action="List"
@@ -19,4 +19,18 @@
         </li>
     </ul>
 </li>
-<br />
+<br />*@
+
+<h3 class="category-header">Categories</h3>
+<ul class="category-list">
+    @foreach (var category in Model)
+    {
+        <li class="category-item">
+            <a asp-controller="Perfume" asp-action="List"
+               asp-route-category="@category.CategoryName">@category.CategoryName</a>
+        </li>
+    }
+    <li class="category-item">
+        <a asp-controller="Perfume" asp-action="List" asp-route-category="">View all perfumes</a>
+    </li>
+</ul>

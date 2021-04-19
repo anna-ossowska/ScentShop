@@ -1,0 +1,26 @@
+﻿@import '../abstracts/_variables.css';
+
+.populartags-header {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+populartags-header span {
+    color: inherit;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.tag-light {
+    display: inline-block;
+    padding: 0.4em 0.7em;
+    font-size: 1rem;
+    line-height: 1;
+    color: inherit;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 10rem;
+    background-color: var(--color-light-blue-2);
+    margin: 0.2rem 0.1rem;
+}
