@@ -31,8 +31,8 @@
     border: 1px solid orange;
     margin: 1rem;
     display: grid;
-    grid-gap: 0.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 4fr)); 
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px)); 
 }
 
 .item {
