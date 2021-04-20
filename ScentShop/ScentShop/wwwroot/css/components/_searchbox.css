@@ -1,7 +1,7 @@
 ﻿@import '../abstracts/_variables.css';
 
 .list-search-box {
-    border: 1px solid purple;
+/*    border: 1px solid purple;*/
     margin: 1rem;
 }
 
@@ -52,7 +52,7 @@
 .list-search-box .search-bt {
     all: unset;
     cursor: pointer;
-    color: var(--color-dark-grey-2);
+    color: var(--color-light-grey-2);
     position: absolute;
     right: 0.8rem;
     padding: 1rem;
@@ -60,5 +60,5 @@
 }
 
 .search-bt:hover {
-    color: var(--color-dark-grey-1);
+    color: var(--color-dark-blue-2);
 }

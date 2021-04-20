@@ -1,15 +1,15 @@
 ﻿@import '../abstracts/_variables.css';
 
 #list-container {
-    border: 1px solid red;
-    padding: 1rem;
+/*    border: 1px solid red;*/
+    padding: 0rem 1rem 1rem 1rem;
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr;
 }
 
 .list-cards {
-    border: 1px solid orange;
+/*    border: 1px solid orange;*/
     padding: 0.5rem;
     margin: 1rem;
     display: grid;
@@ -18,7 +18,7 @@
 }
 
 .list-sortdata {
-    border: 1px solid blue;
+/*    border: 1px solid blue;*/
     margin: 1rem 0 1rem 1rem;
     padding: 1rem;
     display: grid;
@@ -32,7 +32,7 @@
 }
 
 .list-search {
-    border: 1px solid green;
+/*    border: 1px solid green;*/
     margin: 1rem;
 }
 
