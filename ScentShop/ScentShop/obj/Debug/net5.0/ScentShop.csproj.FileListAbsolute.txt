@@ -171,4 +171,3 @@ C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5
 C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\ref\ScentShop.dll
 C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\ScentShop.pdb
 C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\ScentShop.genruntimeconfig.cache
-C:\Users\tomas\Documents\anna\repos\ScentShop\ScentShop\ScentShop\obj\Debug\net5.0\ScentShop.csprojAssemblyReference.cache

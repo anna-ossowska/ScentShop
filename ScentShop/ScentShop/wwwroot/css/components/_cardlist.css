@@ -1,34 +1,88 @@
 ﻿@import '../abstracts/_variables.css';
 
 .list-card {
-    border: 1px solid var(--color-light-blue-3);
+    border: 1px solid var(--color-light-blue-1);
     height: 20rem;
     min-width: 10rem;
-}
-
-.list-card-link,
-.list-card-link:link,
-.list-card-link:visited,
-.list-card-link:focus
-.list-card-link:hover {
-    text-decoration: none !important;
-    color: inherit;
-    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.35s ease-in;
+    box-shadow: 0 0.05rem 0.1rem rgba(0, 0 ,0, 0.1);
 }
 
 .list-card-bg {
     background-color: var(--color-light-blue-1);
-    border: 1px solid var(--color-light-blue-3);
     height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .list-card-picture {
     width: 70%;
+    transition: all 0.3s ease-in;
 }
 
+.list-links {
+    opacity: 0;
+    background-color: transparent;
+    height: 5rem;
+    width: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(15px);
+    transition: all 0.35s ease-in;
+
+}
+
+.list-card-bg .fa-plus {
+    position: absolute;
+    top: 0.9rem;
+    right: 0.9rem;
+    color: var(--color-light-blue-1);
+    font-size: 0.7rem;
+    background-color: var(--color-dark-blue-1);
+    border-radius: 50%;
+    text-align: center;
+    height: 1.3rem;
+    width: 1.3rem;
+    line-height: 1.3rem;
+}
+
+.list-card-bg .fa-info {
+    position: absolute;
+    top: 2.9rem;
+    right: 0.9rem;
+    color: var(--color-light-blue-1);
+    font-size: 0.7rem;
+    background-color: var(--color-dark-blue-1);
+    border-radius: 50%;
+    text-align: center;
+    height: 1.3rem;
+    width: 1.3rem;
+    line-height: 1.3rem;
+}
+
+/* Hover */
+.list-card:hover .list-links {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.list-card:hover .list-card-picture {
+    transform: scale(0.95);
+}
+
+.list-card:hover {
+    border: 1px solid var(--color-light-blue-3);
+}
+
+.list-card:hover .list-card-details .name {
+    color: var(--color-dark-blue-2);
+}
+
+/* Details */
 .list-card-details {
     padding: 1rem;
     position: relative;
@@ -37,6 +91,7 @@
 .list-card-details .name {
     font-size: 1.25rem;
     font-weight: 500;
+     transition: all 0.1s ease-in;
 }
 
 .list-card-details .price {

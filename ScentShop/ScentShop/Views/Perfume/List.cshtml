@@ -56,23 +56,25 @@
 
         </div>
 
-        @* Cards *@
-        <div class="list-cards">
-            @foreach (var perfume in Model.Perfumes)
-            {
-                <a class="list-card-link" asp-controller="Perfume" asp-action="Details" asp-route-id="@perfume.Id">
-                    <div class="list-card">
-                        <div class="list-card-bg">
-                            <img class="list-card-picture" src="@perfume.ImageUrl" alt="">
-                        </div>
-                        <div class="list-card-details">
-                            <h3 class="name">@perfume.Name</h3>
-                            <p class="brand">@perfume.Brand</p>
-                            <p class="price">$@perfume.Price</p>
-                        </div>
+    @* Cards *@
+    <div class="list-cards">
+        @foreach (var perfume in Model.Perfumes)
+        {
+            <div class="list-card">
+                <div class="list-card-bg">
+                    <img class="list-card-picture" src="@perfume.ImageUrl" alt="">
+                    <div class="list-links">
+                        <a asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-perfumeId="@perfume.Id"><i class="fas fa-plus"></i></a>
+                        <a asp-controller="Perfume" asp-action="Details" asp-route-id="@perfume.Id"><i class="fas fa-info"></i></a>
                     </div>
-                </a>
-            }
-        </div>
+                </div>
+                <div class="list-card-details">
+                    <h3 class="name">@perfume.Name</h3>
+                    <p class="brand">@perfume.Brand</p>
+                    <p class="price">$@perfume.Price</p>
+                </div>
+            </div>
+        }
+    </div>
     </div>
 </div>
