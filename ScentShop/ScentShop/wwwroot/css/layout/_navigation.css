@@ -49,12 +49,12 @@
 #navig ul li:hover ul li {
     display: block;
     background-color: #fff;
-    border: solid 0.5px var(--color-light-blue-2);
+    border: solid 0.5px var(--color-light-grey-2);
     border-top: none;
 }
 
 #navig ul li:hover ul li:hover {
-    background-color: var(--color-light-blue-1);
+    background-color: var(--color-light-grey-1);
 }
 
 

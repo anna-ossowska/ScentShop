@@ -102,16 +102,31 @@ namespace ScentShop.Controllers
             return View(perfumeListViewModel);
         }
 
-        public IActionResult Details(int id)
+        public ViewResult Details(int id)
         {
             var perfume = _perfumeRepository.GetById(id);
 
-            if (perfume == null)
+            var categoryId = perfume.CategoryId;
+
+            string isInStock;
+
+            if (perfume.InStock)
             {
-                return NotFound();
+                isInStock = "In Stock";
+            }
+            else
+            {
+                isInStock = "Out of Stock";
             }
 
-            return View(perfume);
+            var detailsViewModel = new DetailsViewModel
+            {
+                Perfume = perfume,
+                InStock = isInStock,
+                CategoryId = categoryId
+            };
+
+            return View(detailsViewModel);
         }
     }
 }

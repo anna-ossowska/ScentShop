@@ -12,7 +12,7 @@ populartags-header span {
     line-height: 2;
 }
 
-.tag--1 {
+.tag {
     display: inline-block;
     padding: 0.4em 0.7em;
     font-size: 0.8rem;
@@ -22,6 +22,17 @@ populartags-header span {
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: 10rem;
-    background-color: var(--color-light-purple-1);
     margin: 0.2rem 0.1rem;
+}
+
+.tag--1 {
+    background-color: var(--color-light-purple-1);
+}
+
+.tag--2 {
+    background-color: var(--color-dark-blue-2);
+}
+
+.tag--3 {
+    background-color: var(--color-dark-grey-2);
 }
