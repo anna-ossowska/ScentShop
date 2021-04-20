@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ScentShop.Models;
 
 namespace ScentShop.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210419201610_AddingImagesToSeedFile")]
+    partial class AddingImagesToSeedFile
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -512,7 +514,7 @@ namespace ScentShop.Migrations
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Almond Cream, Dianthus",
-                            Name = "Wood Sage",
+                            Name = "Wood Sage & Sea Salt",
                             Price = 149m
                         },
                         new
@@ -550,7 +552,7 @@ namespace ScentShop.Migrations
                             Capacity = 50,
                             CategoryId = 1,
                             Description = "This perfume is lavished with shimmering freshness, honey, rum, and a dramatic floral veil, and it lives in Black Orchid’s world of glamorous mystique, while exuding its own ultra-feminine essence.",
-                            ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618900528/ScentShop/for%20Her/tom-ford-velvet-orchid_my0mzu.png",
+                            ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861775/ScentShop/for%20Her/tom-ford-velvet-orchid_xwsrg9.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Orange Blossom, Hyacinth, Jonquil",
@@ -592,7 +594,7 @@ namespace ScentShop.Migrations
                             Capacity = 50,
                             CategoryId = 1,
                             Description = "In this new olfactive journey, ylang-ylang is amplified while rum absolute and black plum become even more pronounced, augmenting the sensuality of TOM FORD‘s original perfume, Black Orchid Eau de Parfum.",
-                            ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618900532/ScentShop/for%20Her/tom-ford-black-orchid_izuvrm.png",
+                            ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861774/ScentShop/for%20Her/tom-ford-black-orchid_xsypzg.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Black Truffle, Black Orchid, Patchouli",
@@ -807,7 +809,7 @@ namespace ScentShop.Migrations
                             IsPerfumeOfTheWeek = false,
                             KeyNotes = "Apple, Lotus, Cedar",
                             Name = "Voyage",
-                            Price = 300m
+                            Price = 700m
                         },
                         new
                         {

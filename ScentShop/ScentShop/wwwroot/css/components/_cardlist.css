@@ -20,6 +20,13 @@
     background-color: var(--color-light-blue-1);
     border: 1px solid var(--color-light-blue-3);
     height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-card-picture {
+    width: 70%;
 }
 
 .list-card-details {
@@ -28,7 +35,8 @@
 }
 
 .list-card-details .name {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
 .list-card-details .price {
@@ -38,3 +46,4 @@
     padding: 1rem;
     color: var(--color-dark-grey-2);
 }
+
