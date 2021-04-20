@@ -45,10 +45,18 @@
     height: 40%;
     background-color: var(--color-light-blue-1);
     margin-bottom: 1rem;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.cardindex-side .cardindex-picture {
+
+
+.cardindex-picture {
+    width: 60%;
+}
+
+/*.cardindex-side .cardindex-picture {
     background-image: url('/images/cardindex-2.png');
     background-size: contain;
     background-position: center;
@@ -59,7 +67,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+}*/
 
 .perfume-name {
     text-align: center;
@@ -86,7 +94,7 @@
     list-style: none;
     text-align: center;
     padding-inline-start: 0;
-    padding: 0.25rem 2rem;
+    padding: 0.25rem 2.5rem;
 }
 
 .cardindex-details li {
