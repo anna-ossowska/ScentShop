@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Category>
+
+@foreach (var category in Model)
+{
+    if (category.CategoryId == 1)
+    {
+        <span class="tag--1">@category.CategoryName</span>
+    }
+    else
+    {
+        <span class="tag--2">@category.CategoryName</span>
+    }
+}
