@@ -50,7 +50,7 @@
                                 <p class="price-only">Only</p>
                                 <p class="price-value">$@perfume.Price.ToString("0.######")</p>
                             </div>
-                            <a class="bt bt--outlined" href="#">Buy now</a>
+                            <a class="bt bt--outlined" asp-controller="Perfume" asp-action="Details" asp-route-id="@perfume.Id">Buy now</a>
                         </div>
                     </div>
                 </div>
@@ -59,10 +59,6 @@
     </div>
 </div>
 
-
-<br />
-<br />
-<br />
 
 @*@foreach (var perfume in Model.PerfumesOfTheWeek)
     {
