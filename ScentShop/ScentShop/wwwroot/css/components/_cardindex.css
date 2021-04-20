@@ -27,7 +27,7 @@
 }
 
 .cardindex-side--back {
-    background-image: linear-gradient(to right top, var(--color-purple), var(--color-purple-lighter));
+    background-image: linear-gradient(to right top, var(--color-dark-purple-1), var(--color-dark-purple-2));
     transform: rotateY(180deg);
 }
 
@@ -87,7 +87,7 @@
 
 .cardindex-details li:nth-child(2) {
     font-weight: bold;
-    color: var(--color-dark-blue-2);
+    color: var(--color-dark-purple-2);
 }
 
 /* Back look */
@@ -111,7 +111,7 @@
 .price-value {
     font-family: 'Lora', serif;
     font-weight: 300;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 2.5rem;
 
 }

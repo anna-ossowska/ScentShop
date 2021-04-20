@@ -2,7 +2,7 @@
 @import '../base/_animations.css';
 
 #navig {
-    background-color: var(--color-light-blue-1);
+    background-color: var(--color-light-grey-1);
     line-height: 1.5;  
 }
 
@@ -136,7 +136,7 @@
     top: 3.15rem;
     width: 80%;
     height: 0;
-    background-color: var(--color-light-grey-2);
+    background-color: var(--color-light-grey-1);
     transition: all 0.2s linear;
 }
 
@@ -150,13 +150,13 @@
     position: relative;
 }
 
-.active::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 80%;
-    height: 0.2rem;
-    top: 3.15rem;
-    background-color: var(--color-brown);
-    border-radius: 10rem;
-}
+    .active::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 80%;
+        height: 0.2rem;
+        top: 3.15rem;
+        background-color: var(--color-light-purple-1);
+        border-radius: 10rem;
+    }
