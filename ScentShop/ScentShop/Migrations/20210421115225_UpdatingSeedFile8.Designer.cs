@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ScentShop.Models;
 
 namespace ScentShop.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210421115225_UpdatingSeedFile8")]
+    partial class UpdatingSeedFile8
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -399,7 +401,7 @@ namespace ScentShop.Migrations
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861769/ScentShop/for%20Her/chanel-chance_opctto.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = true,
-                            KeyNotes = "Jasmine, Pink Pepper, Vanilla, Iris",
+                            KeyNotes = "Jasmine, Pink Pepper, Vanilla",
                             Name = "Chance",
                             Price = 108m
                         },
@@ -409,7 +411,7 @@ namespace ScentShop.Migrations
                             Brand = "Chanel",
                             Capacity = 50,
                             CategoryId = 1,
-                            Description = "With its unprecedented use of aldehydes, which add layers of complexity, N°5 was the world’s first abstract fragrance. This floral bouquet composed around May Rose and Jasmine features bright citrus top notes. Aldehydes create a unique presence while the smooth touch of Bourbon Vanilla leaves an incredibly sensual trail.",
+                            Description = "With its unprecedented use of aldehydes, which add layers of complexity, N°5 was the world’s first abstract fragrance. The Eau de Parfum draws inspiration from the Parfum with which it shares its floral aldehyde signature. This floral bouquet composed around May Rose and Jasmine features bright citrus top notes. Aldehydes create a unique presence while the smooth touch of Bourbon Vanilla leaves an incredibly sensual trail.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861769/ScentShop/for%20Her/chanel-n5_nogmdh.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
@@ -423,7 +425,7 @@ namespace ScentShop.Migrations
                             Brand = "Dior",
                             Capacity = 100,
                             CategoryId = 1,
-                            Description = "This fragrance opens with the exotic, floral-fruity notes of ylang ylang, while Damascus rose, and both Grasse jasmine and Indian jasmine sambac exude a warmth. This scent is the ultimate expression of femininity and luxury and is floral yet mysterious, a confident signature to celebrate the feminine allure.",
+                            Description = "This fragrance opens with the exotic, floral-fruity notes of ylang ylang, while Damascus rose, and both Grasse jasmine and Indian jasmine sambac exude a seductive warmth. This scent is the ultimate expression of femininity and luxury and is floral yet mysterious, a confident signature to celebrate your feminine allure.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861768/ScentShop/for%20Her/dior-jadore_exnrym.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
@@ -437,7 +439,7 @@ namespace ScentShop.Migrations
                             Brand = "Dior",
                             Capacity = 50,
                             CategoryId = 1,
-                            Description = "In the heart of this perfume, the fresh, sensual beauty of the Grasse rose combines with the boldness of Damascus rose. They are woven with Calabrian bergamot, vivid rosewood from French Guiana, and pink pepper from Réunion Island.",
+                            Description = "This eau de parfum is a floral declaration of love. In the heart of the perfume, the fresh, sensual beauty of the Grasse rose combines with the boldness of Damascus rose. They are woven with Calabrian bergamot, vivid rosewood from French Guiana, and pink pepper from Réunion Island.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861769/ScentShop/for%20Her/dior-missdior_fpeatw.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
@@ -451,11 +453,11 @@ namespace ScentShop.Migrations
                             Brand = "Gucci",
                             Capacity = 50,
                             CategoryId = 1,
-                            Description = "Gucci Flora is the utterly feminine, deeply sensual fragrance for women inspired by Gucci's iconic Flora Pattern. The fragrance is characterized by contrasts and is for the classic, modern woman who has a youthful, feminine spirit.",
+                            Description = "A sumptuous white floral Gorgeous Gardenia is Gucci’s faithful creation of the perfect gardenia. The Gorgeous Gardenia woman exudes a sultry sensuality that is lushly enticing. Men are drawn to her as bees are to a blossoming flower.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861770/ScentShop/for%20Her/gucci-flora_p6gbdl.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
-                            KeyNotes = "Osmanthus, Peony, Rose",
+                            KeyNotes = "Red Berries, Pear, White Gardenia",
                             Name = "Flora",
                             Price = 85m
                         },
@@ -507,11 +509,11 @@ namespace ScentShop.Migrations
                             Brand = "Jo Malone London",
                             Capacity = 100,
                             CategoryId = 1,
-                            Description = "Escape the everyday along the windswept shore where white waves break and the air is fresh with sea salt and spray. Alive with the mineral scent of the rugged cliffs mingled with the woody earthiness of sage, this fragrance is lively, spirited, and totally joyful.",
+                            Description = "Built on a platform of rich amber, this contrasting fragrance is subtly woven with the clean smell of barber's soap. With top notes that evoke a natural, classic cologne - a rich blend of fresh mandarin, bergamot, and cardamom that melds into the sensual mid notes of patchouli, tonka bean, and vanilla; and finishes with the clean, leathery notes of vetiver, neroli, orange blossom, saffron, and suede, Amber Pour Homme is a fragrance for the self-assured man.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861773/ScentShop/for%20Her/jo-malone-wood-sage-sea-salt-cologne_syarnx.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
-                            KeyNotes = "Ambrette Seeds, Sea Salt, Sage",
+                            KeyNotes = "Almond Cream, Dianthus",
                             Name = "Wood Sage",
                             Price = 149m
                         },
@@ -577,7 +579,7 @@ namespace ScentShop.Migrations
                             Brand = "Giorgio Armani",
                             Capacity = 50,
                             CategoryId = 1,
-                            Description = "A sweet take on a floral scent. It opens with luminous notes of blackcurrant nectar and mandarin. Orange blossom forms the heart of the fragrance and warm vanilla anchors the irresistible blend for a lasting scent.",
+                            Description = "A sweet take on a floral fragrance, this women's perfume opens with luminous notes of blackcurrant nectar and mandarin. Orange blossom forms the heart of the fragrance and warm vanilla anchors the irresistible blend for a lasting scent.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861773/ScentShop/for%20Her/giorgio-armani-si_mg396i.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
@@ -591,7 +593,7 @@ namespace ScentShop.Migrations
                             Brand = "Tom Ford",
                             Capacity = 50,
                             CategoryId = 1,
-                            Description = "Black Orchid opens with aphrodisiacal black truffle and narcotic ylang ylang – touched with effervescent bergamot and bitter orange. Rum-soaked, sweet black plum surrounds the perfume‘s black orchid extract, while woody patchouli and creamy vanilla wrap the orchid in rich warmth.",
+                            Description = "In this new olfactive journey, ylang-ylang is amplified while rum absolute and black plum become even more pronounced, augmenting the sensuality of TOM FORD‘s original perfume, Black Orchid Eau de Parfum.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618900532/ScentShop/for%20Her/tom-ford-black-orchid_izuvrm.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
@@ -605,7 +607,7 @@ namespace ScentShop.Migrations
                             Brand = "Dolce & Gabbana",
                             Capacity = 125,
                             CategoryId = 2,
-                            Description = "The fragrance opens up with neroli and citrusy hints of mandarin and bergamot. At the heart is lavender. Touches of tobacco and tonka bean provide structure for the last dry notes of wood.",
+                            Description = "The fragrance opens up with neroli and citrusy hints of mandarin and bergamot.At the heart is lavender.Touches of tobacco and tonka bean provide structure for the last dry notes of wood.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861787/ScentShop/for%20Him/dolcegabbana-por-homme_j9xht5.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
@@ -619,7 +621,7 @@ namespace ScentShop.Migrations
                             Brand = "Chanel",
                             Capacity = 50,
                             CategoryId = 2,
-                            Description = "A woody, aromatic fragrance for the man who defies convention. A provocative blend of citrus and woods that liberates the senses. Fresh, clean, and profoundly sensual.",
+                            Description = "A woody, aromatic fragrance for the man who defies convention; a provocative blend of citrus and woods that liberates the senses. Fresh, clean, and profoundly sensual.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861787/ScentShop/for%20Him/chanel-bleu-de-chanel_mhu9dp.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
@@ -661,7 +663,7 @@ namespace ScentShop.Migrations
                             Brand = "Dior",
                             Capacity = 50,
                             CategoryId = 2,
-                            Description = "Eau Sauvage is the perfume of the cult of elegance, refinement, and good humor. With the zest of citrus fruits for freshness, an invigorating bouquet of herbs, and a hint of jasmine and vetiver, it will remain a fresh, discreet classic.",
+                            Description = "Lucid and willful, Eau Sauvage is the perfume of the cult of elegance, refinement, and good humor. With the zest of citrus fruits for freshness, an invigorating bouquet of herbs, a hint of jasmine and vetiver for the sensual touch, and oakmoss to conquer and seduce, it will remain a fresh, discreet classic.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861788/ScentShop/for%20Him/dior-eau-sauvage_txzqlm.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
@@ -689,7 +691,7 @@ namespace ScentShop.Migrations
                             Brand = "Dolce & Gabbana",
                             Capacity = 50,
                             CategoryId = 2,
-                            Description = "Elegant and sensual, this perfume is decidedly modern and uniquely timeless all at once. The spicy fragrance features fresh top notes of grapefruit, coriander, and basil, warm heart of cardamom and ginger, and a deep masculine base of tobacco, amber, and cedarwood.",
+                            Description = "Elegant and sensual, this perfume is decidedly modern and uniquely timeless all at once. The spicy fragrance features fresh top notes of grapefruit, coriander, and basil; a warm heart of cardamom and ginger; and a deep masculine base of tobacco, amber, and cedarwood.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861789/ScentShop/for%20Him/dolcegabbana-the-one-for-men_vcv0qq.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
@@ -717,11 +719,11 @@ namespace ScentShop.Migrations
                             Brand = "Prada",
                             Capacity = 50,
                             CategoryId = 2,
-                            Description = "With its highly natural charm, Prada makes and leaves a lasting impression. A rich, complex Amber intermingles with the clean, fresh scent of barber’s soap, typical of a fougère, and continues to evolve between a duet of olfactory contrasts.",
+                            Description = "The perfumer Daniela Roche-Andrier created the composition in four basic accords : Amber – the main accord, rich and complex oriental base which includes amber, vanilla, labdanum, Tonka and patchouli; Fougere – or the aromatic accord with a remarkable soapy note, includes notes of pelargonium, vetiver, orange blossom and myrrh at the heart; Cologne – the refreshing citrusy top of bergamot, mandarin, neroli and cardamom; Leather – leather note is present at the base of the composition (leather, saffron and sandalwood).",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861790/ScentShop/for%20Him/prada-amber_ypozz9.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
-                            KeyNotes = "Bergamot Oil, Mandarin, Cardamom, Neroli",
+                            KeyNotes = "Bergamot Oil, Mandarin, Cardamom",
                             Name = "Amber",
                             Price = 94m
                         },
@@ -731,7 +733,7 @@ namespace ScentShop.Migrations
                             Brand = "Ralph Lauren",
                             Capacity = 102,
                             CategoryId = 2,
-                            Description = "The heart of the fragrance is aromatic cypress and clary sage which add another level of sophistication, freshness, and sensuality. The scent peaks with the salty mineral Deep Ocean Accord that energizes and activates an even deeper level of freshness.",
+                            Description = "The heart of the fragrance is aromatic cypress and clary sage which add another level of sophistication, freshness, and sensuality.  The scent peaks with the salty mineral Deep Ocean Accord that energizes and activates an even deeper level of freshness.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861791/ScentShop/for%20Him/ralph-lauren-polo-deep-blue_ueo6b6.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
@@ -745,7 +747,7 @@ namespace ScentShop.Migrations
                             Brand = "Tom Ford",
                             Capacity = 100,
                             CategoryId = 2,
-                            Description = "A composition of exotic, smoky woods including rare oud, sandalwood, rosewood, eastern spices, and sensual amber — revealing oud‘s rich and compelling power.",
+                            Description = "A composition of exotic, smoky woods including rare oud, sandalwood, rosewood, eastern spices, and sensual amber—revealing oud‘s rich and compelling power.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861792/ScentShop/for%20Him/tom-ford-oud-wood_fhx3vn.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
@@ -773,11 +775,11 @@ namespace ScentShop.Migrations
                             Brand = "Versace",
                             Capacity = 100,
                             CategoryId = 2,
-                            Description = "New and exquisite qualities of natural citrus, aquatic notes, and violet leaves combined with modern hints of fig leaf to give an incisive, Mediterranean freshness.",
+                            Description = "New and exquisite qualities of natural citrus, aquatic notes, and violet leaves combine with modern hints of fig leaf to give an incisive, Mediterranean freshness.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861793/ScentShop/for%20Him/versace-dylan-blue_canfvk.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
-                            KeyNotes = "Fig Leaf, Bergamot, Patchouli",
+                            KeyNotes = "Aquatic Notes, Bergamot, Patchouli",
                             Name = "Dylan Blue",
                             Price = 200m
                         },
@@ -787,7 +789,7 @@ namespace ScentShop.Migrations
                             Brand = "Versace",
                             Capacity = 100,
                             CategoryId = 2,
-                            Description = "Diamante Citrus, Bitter Orange leaves and Neiroli flowers light up the fragrance with Mediterranean accents. The heart of Versace Pour Homme is characterized by the mineral-floral aroma, almost tactile, of Clary Sage and Blue Hyacinth. Amber and Musk deliver deep and sensual base notes.",
+                            Description = "The new fragrance for men, Versace Pour Homme, blends essential ingredients of Mediterranean origin to hit aromatic notes.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861793/ScentShop/for%20Him/versace-pour-homme_he9rl1.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = true,
@@ -815,7 +817,7 @@ namespace ScentShop.Migrations
                             Brand = "Giorgio Armani",
                             Capacity = 100,
                             CategoryId = 2,
-                            Description = "A light, distinguished fragrance inspired by the fresh sea, warm sun and the richness of the earth. It opens with a splash of fresh calabrian bergamot, neroli and green tangerine. Light, aquatic nuances mix with jasmine petal, crisp rock rose, rosemary, fruity persimmon and warm Indonesian patchouli to create a masculine scent that is both fresh and sensual.",
+                            Description = "Aqua di Gio is full of scorching Mediterranean sun. Bitter citrus with aromatic nuance of rosemary intertwines with salty, sea nuances and pellucid hedione. Sharp notes of spices are softened by woody base with warm, musky trail.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861789/ScentShop/for%20Him/giorgio-armani-acqua_vgzmvl.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
@@ -857,11 +859,11 @@ namespace ScentShop.Migrations
                             Brand = "Versace",
                             Capacity = 100,
                             CategoryId = 2,
-                            Description = "Eros is a vibrant, and glowing combination of fresh mint leaves, Italian lemon zest, and green apple. An addictive sensuality accented by oriental, intriguing, and enveloping notes like tonka beans, amrboxan amber, geranium flower, and vanilla melds with a racy virility symbolized by woods — such as cedarwood from Atlas and Virginia.",
+                            Description = "Eros is a vibrant, and glowing combination of fresh mint leaves, Italian lemon zest, and green apple. An addictive sensuality accented by oriental, intriguing, and enveloping notes like tonka beans, amrboxan amber, geranium flower, and vanilla melds with a racy virility symbolized by woods—such as cedarwood from Atlas and Virginia.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861794/ScentShop/for%20Him/versace-eros_dgyr6q.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
-                            KeyNotes = "Mint Leaves, Green Apple, Lemon, Orange Blossom",
+                            KeyNotes = "Mint Leaves, Orange Blossom, Vanilla",
                             Name = "Eros",
                             Price = 98m
                         },
@@ -871,7 +873,7 @@ namespace ScentShop.Migrations
                             Brand = "Hugo Boss",
                             Capacity = 100,
                             CategoryId = 2,
-                            Description = "Boss Bottled Night is a fragrance which abounds in intense and masculine woody accords. It opens with lavender and birch tree aromas, while accentuating intense heart aromas of African violet, resting on a base constructed of warm, precious woody nuances of Louro Amarelo tree and sensual musk.",
+                            Description = "Boss Bottled Night is an aromatic fragrance which abounds in intense and masculine woody accords. It opens with lavender and birch tree aromas, while accentuating intense heart aromas of African violet, resting on a base constructed of warm, precious woody nuances of Louro Amarelo tree and sensual musk.",
                             ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861789/ScentShop/for%20Him/hugo_boss_bottled_night_byvaj7.png",
                             InStock = true,
                             IsPerfumeOfTheWeek = false,
