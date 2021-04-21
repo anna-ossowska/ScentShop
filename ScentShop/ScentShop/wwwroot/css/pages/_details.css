@@ -23,7 +23,7 @@
 .details-content {
     display: flex;
     align-items: center;
-    padding: 3rem 3rem 3rem 0;
+    padding: 3rem 5rem 3rem 0;
 }
 
 .details-content-wrapper .header {
