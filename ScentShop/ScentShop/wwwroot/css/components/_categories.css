@@ -9,10 +9,38 @@
     font-size: 1.25rem;
     font-weight: 500;
 }
-
 .category-item a {
     text-decoration: none;
     color: inherit;
     font-size: 1rem;
     line-height: 2;
+    position: relative;
+    transition: all 0.25s ease-out;
+}
+
+.category-item {
+    position: relative;
+    transition: all 0.25s ease-out;
+}
+
+.category-item::after {
+    content: '';
+    display: block;
+    height: 0.6rem;
+    width: 0.6rem;
+    border-radius: 50%;
+    background-color: var(--color-light-blue-2);
+    position: absolute;
+    top: 7px;
+    left: 12rem;
+    opacity: 0;
+    transition: all 0.25s ease-out;
+}
+
+.category-item:hover {
+    color: var(--color-dark-blue-2);
+}
+
+.category-item:hover::after {
+    opacity: 1;
 }
