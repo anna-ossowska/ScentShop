@@ -9,31 +9,35 @@
 
     @* Details *@
     <div class="details-content">
-        <div class="header">@Model.Perfume.Name<span>@Model.Perfume.Brand</span></div>
+        <div class="details-content-wrapper">
+            <h3 class="header">@Model.Perfume.Name &nbsp;<span>[ @Model.Perfume.Brand ]</span></h3>
 
-        @* Render different tag color depending on Model information *@
-        <div class="details-tags">
-            
-            @if (Model.CategoryId == 1)
-            {
-                <span class="tag tag--1">For Her</span>
-            }
-            else
-            {
-                <span class="tag tag--2">For Him</span>
-            }
+            @* Render different tag color depending on Model information *@
+            <div class="info-group">
+                <div class="general-info">
+                    <p class="price">$@Model.Perfume.Price</p>
+                    <p class="capacity">@Model.Perfume.Capacity ml</p>
+                </div>
+                <div class="details-tags">
 
-            <span class="tag tag--3">@Model.InStock</span>
+                    @if (Model.CategoryId == 1)
+                    {
+                        <span class="tag tag--1">For Her</span>
+                    }
+                    else
+                    {
+                        <span class="tag tag--2">For Him</span>
+                    }
+
+                    <span class="tag tag--3">@Model.InStock</span>
+                </div>
+            </div>
+
+            <p class="description">@Model.Perfume.Description</p>
+
+            <p class="keynotes"><span>Key Notes: &nbsp;</span>@Model.Perfume.KeyNotes</p>
+
+            <a class=" bt bt--main bt--animated bt--details" asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-perfumeId="@Model.Perfume.Id">Add to cart</a>
         </div>
-
-        <div class="price">$@Model.Perfume.Price</div>
-
-        <div class="capacity">@Model.Perfume.Capacity ml</div>
-
-        <div class="description">@Model.Perfume.Description</div>
-
-        <div class="keynotes">@Model.Perfume.KeyNotes</div>
-
-        <a class="bt bt--main" asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-perfumeId="@Model.Perfume.Id">Add to cart</a>
     </div>
 </div>

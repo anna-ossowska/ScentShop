@@ -86,8 +86,8 @@
 }
 
 .cardindex-details li:nth-child(2) {
-    font-weight: bold;
-    color: var(--color-dark-purple-2);
+    font-weight: 400;
+    color: var(--color-light-grey-2);
 }
 
 /* Back look */
