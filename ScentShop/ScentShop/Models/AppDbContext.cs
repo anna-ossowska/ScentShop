@@ -65,7 +65,7 @@ namespace ScentShop.Models
                 Id = 3,
                 Name = "J'adore",
                 Brand = "Dior",
-                ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1618861768/ScentShop/for%20Her/dior-jadore_exnrym.png",
+                ImageUrl = "https://res.cloudinary.com/do0ohxztp/image/upload/v1619012420/ScentShop/for%20Her/dior-jadore_eewtw5.png",
                 CategoryId = 1,
                 Capacity = 100,
                 Price = 135M,
