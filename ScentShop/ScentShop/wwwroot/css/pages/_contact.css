@@ -1,1 +1,42 @@
-﻿
+﻿@import '../abstracts/_variables.css';
+
+.contact-container {
+    margin: 2.5rem auto;
+    padding: 0 12rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-wrapper .call,
+.contact-wrapper .message,
+.contact-wrapper .visit {
+    padding: 1rem 2.5rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.contact-wrapper .call:hover,
+.contact-wrapper .message:hover,
+.contact-wrapper .visit:hover {
+    transform: scale(1.1);
+}
+
+h3.contact-header {
+    margin: 1.2rem 0 0.5rem;
+    font-size: 1.25rem;
+}
+
+.contact-info {
+    font-size: 1rem;
+}
+
+.bi-telephone,
+.bi-envelope,
+.bi-geo-alt {
+    fill: var(--color-dark-grey-2);
+    opacity: 0.5;
+}
