@@ -68,19 +68,19 @@
                 <nav id="navig-secondary">
                     <div class="navig-container">
                         <ul>
-                            <li class="@Html.IsActive("Home", "Index")">
-                                <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <li class="@Html.IsActive("Home", "Index")" id=home>
+                                <a asp-area="" asp-controller="Home" asp-action="Index">&nbsp;Home</a>
                             </li>
 
-                            <li class="@Html.IsActive("Perfume", "List")">
+                            <li class="@Html.IsActive("Perfume", "List")" id="products">
                                 <a asp-controller="Perfume" asp-action="List">Products</a>
                             </li>
 
-                            <li class="@Html.IsActive("ShoppingCart", "Index")">
+                            <li class="@Html.IsActive("ShoppingCart", "Index")" id="shopping">
                                 <a asp-controller="ShoppingCart" asp-action="Index">Shopping</a>
                             </li>
 
-                            <li class="@Html.IsActive("Contact", "Index")">
+                            <li class="@Html.IsActive("Contact", "Index")" id="contact">
                                 <a asp-controller="Contact" asp-action="Index">Contact</a>
                             </li>
                         </ul>

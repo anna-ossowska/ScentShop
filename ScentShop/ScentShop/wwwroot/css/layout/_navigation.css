@@ -126,6 +126,7 @@
     font-size: 1.25rem;
     color: var(--color-dark-grey-1);
     margin-top: 1rem;
+
 }
 
 #navig-secondary ul li a::after {
@@ -134,7 +135,7 @@
     display: block;
     border-radius: 10rem;
     top: 3.15rem;
-    width: 80%;
+    width: 84%;
     height: 0;
     background-color: var(--color-light-grey-1);
     transition: all 0.2s linear;
@@ -146,17 +147,24 @@
     background-color: var(--color-light-grey-2);
 }
 
-.active {
+#home.active,
+#products.active,
+#shopping.active,
+#contact.active {
     position: relative;
 }
 
-    .active::after {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 80%;
-        height: 0.2rem;
-        top: 3.15rem;
-        background-color: var(--color-light-purple-1);
-        border-radius: 10rem;
-    }
+#home.active::after,
+#products.active::after,
+#shopping.active::after,
+#contact.active::after
+{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 84%;
+    height: 0.2rem;
+    top: 3.15rem;
+    background-color: var(--color-light-purple-1);
+    border-radius: 10rem;
+}
