@@ -40,3 +40,20 @@ h3.contact-header {
     fill: var(--color-dark-grey-2);
     opacity: 0.5;
 }
+
+
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.75rem;
+}
+
+.contact-map {
+    background-image: url('/images/map-final.png');
+    background-position: center;
+    background-size: cover;
+    height: 35vh;
+    width: 100%;
+}
