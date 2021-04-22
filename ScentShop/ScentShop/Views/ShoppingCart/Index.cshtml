@@ -45,9 +45,9 @@ else
             </table>
 
             <div class="shopcart-summary">
-                <div><span>Free shipping.</span> All orders take 1-2 business days to process prior to shipping.</div>
-                <div><span>Total:</span>@Model.Total.ToString("0.######")</div>
-                <div><a asp-controller="Order" asp-action="Checkout" class="btn btn-info">Check out</a></div>
+                <div class="shipping-info"><span>* Free shipping.</span> All orders take 1-2 business days to process prior to shipping.</div>
+                <div class="total">Total: &nbsp;<span>$@Model.Total.ToString("0.######")</span></div>
+                <div><a asp-controller="Order" asp-action="Checkout" class="bt bt--main bt--animated bt--small">Checkout</a></div>
             </div>
         </div>
     </div>
