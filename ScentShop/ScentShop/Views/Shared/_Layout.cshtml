@@ -71,15 +71,15 @@
                             </li>
 
                             <li class="@Html.IsActive("Perfume", "List")">
-                                <a asp-area="" asp-controller="Perfume" asp-action="List">Products</a>
+                                <a asp-controller="Perfume" asp-action="List">Products</a>
                             </li>
 
                             <li>
-                                <a asp-area="" asp-controller="Home" asp-action="Index">Best sellers</a>
+                                <a asp-controller="ShoppingCart" asp-action="Index">My Shopping</a>
                             </li>
 
                             <li class="@Html.IsActive("Contact", "Index")">
-                                <a asp-area="" asp-controller="Contact" asp-action="Index">Contact</a>
+                                <a asp-controller="Contact" asp-action="Index">Contact</a>
                             </li>
                         </ul>
                     </div>

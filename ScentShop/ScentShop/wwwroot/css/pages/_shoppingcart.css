@@ -83,10 +83,18 @@ th.quantity {
 
 .quantity-wrapper .minus a,
 .quantity-wrapper .plus a {
-    color: var(--color-dark-grey-2);
+    color: var(--color-light-grey-2);
     text-decoration: none;
+    font-weight: 600;
+    transition: all 0.1s ease-in;
 }
 
+
+.quantity-wrapper .minus a:hover,
+.quantity-wrapper .plus a:hover {
+    color: var(--color-light-purple-1);
+
+}
 .quantity-wrapper .number {
     font-size: 1rem;
 }
@@ -130,3 +138,24 @@ th.price {
     font-weight: 600;
 }
 
+/*Empty shopping cart*/
+.shopcart-container--empty {
+    margin: 6rem auto 5.6rem;
+    padding: 0 12rem;
+}
+
+.shopcart-wrapper--empty {
+    text-align: center;
+}
+
+.shopcart-wrapper--empty .icon {
+    width: 15rem;
+}
+
+.shopcart-wrapper--empty .header {
+    margin-top: 2rem;
+}
+
+.shopcart-wrapper--empty .description {
+    margin-bottom: 2rem;
+}

@@ -2,9 +2,14 @@
 
 @if (Model.ShoppingCart.ShoppingCartItems.Count == 0)
 {
-    <p>Your cart is empty.</p>
-    <p>Looks like you haven't added anything to your cart yet</p>
-    <a asp-controller="Perfume" asp-action="List" class="bt bt--main bt--animated">Shop now</a>
+<div class="shopcart-container--empty">
+    <div class="shopcart-wrapper--empty">
+        <img class="icon" src="/images/shopping-bag-outlined.svg" alt="Alternate Text" />
+        <h3 class="header">Your cart is empty.</h3>
+        <p class="description">Looks like you haven't added anything to your cart yet</p>
+        <a asp-controller="Perfume" asp-action="List" class="bt bt--main bt--animated bt-smaller">Shop now</a>
+    </div>
+</div>
 }
 else
 {
@@ -33,7 +38,7 @@ else
                             <td class="brand">@item.Perfume.Brand</td>
                             <td class="quantity">
                                 <div class="quantity-wrapper">
-                                    <div class="minus"><a asp-controller="ShoppingCart" asp-action="RemoveFromShoppingCart" asp-route-perfumeId="@item.Perfume.Id">-</a></div>
+                                    <div class="minus"><a asp-controller="ShoppingCart" asp-action="RemoveFromShoppingCart" asp-route-perfumeId="@item.Perfume.Id">&ndash;</a></div>
                                     <div class="number">@item.Amount</div>
                                     <div class="plus"><a asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-perfumeId="@item.Perfume.Id">+</a></div>
                                 </div>
