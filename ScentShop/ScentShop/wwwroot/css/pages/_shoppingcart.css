@@ -1,1 +1,103 @@
-﻿
+﻿@import '../abstracts/_variables.css';
+
+.shopcart-container {
+    margin: 2rem auto;
+    padding: 0 12rem;
+}
+
+.shopcart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr, th, td:not(.picture) {
+    padding: 1rem;
+}
+
+th {
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-dark-grey-2);
+    /*color: var(--color-dark-grey-2);*/
+}
+
+tr {
+    border-bottom: 0.5px solid var(--color-dark-grey-2);
+}
+
+td {
+    font-size: 1.2rem;
+}
+
+/* Picture */
+th.picture {
+    width: 20%;
+}
+
+td.picture {
+    padding: 1rem 1rem 1rem 0;
+}
+
+td.picture .picture-bg {
+    background-color: var(--color-light-blue-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    width: 12rem;
+    margin: 0.5rem;
+}
+
+td.picture img {
+    height: 12rem;
+    width: 12rem;
+}
+
+/* Name */
+th.name {
+    width: 25%;
+    text-align: left;
+}
+
+/* Brand */
+th.brand {
+    width: 25%;
+    text-align: left;
+}
+
+/* Quantity */
+th.quantity {
+    width: 25%;
+    text-align: left;
+    padding-left: 2.35rem;
+}
+
+.quantity-wrapper {
+    border: 1px solid var(--color-light-grey-2);
+    width: 7rem;
+    height: 2.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 1.25rem;
+}
+
+.quantity-wrapper .minus a,
+.quantity-wrapper .plus a {
+    color: var(--color-dark-grey-2);
+    text-decoration: none;
+}
+
+.quantity-wrapper .number {
+    font-size: 1rem;
+}
+
+td.quantity {
+    text-align: left;
+}
+
+/* Price */
+th.price {
+    width: 5%;
+    text-align: left;
+}
