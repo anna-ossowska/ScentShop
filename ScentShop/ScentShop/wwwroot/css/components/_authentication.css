@@ -1,0 +1,43 @@
+﻿@import '../abstracts/_variables.css';
+
+.container-authentication {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.col-authentication {
+    border: 1px solid var(--color-light-blue-2);
+    box-shadow: 0 0.05rem 0.1rem rgba(0, 0,0, 0.1);
+    border-radius: 2px;
+    padding: 4rem;
+}
+
+.row-authentication {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-authentication h3 {
+    font-size: 2rem;
+}
+
+.container-authentication h4 {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+#forgot-password,
+#register,
+#resend-confirmation {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.1s ease-in;
+}
+
+#forgot-password:hover,
+#register:hover,
+#resend-confirmation:hover {
+    color: var(--color-dark-blue-2);
+}
