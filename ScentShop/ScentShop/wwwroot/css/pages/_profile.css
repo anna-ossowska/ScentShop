@@ -1,8 +1,7 @@
 ﻿@import '../abstracts/_variables.css';
 
 .container-profile {
-    margin-top: 4.2rem;
-    margin-bottom: 4.2rem;
+    margin: 3rem auto;
     border: 1px solid var(--color-light-blue-2);
     box-shadow: 0 0.05rem 0.1rem rgba(0, 0,0, 0.1);
     min-height: 29rem;
@@ -19,7 +18,7 @@
 }
 
 .nav-link.active {
-    border-bottom: 1px solid var(--color-light-blue-3) !important;
+    border-bottom: 0.5px solid var(--color-dark-blue-2) !important;
     background-color: transparent !important;
     border-radius: 0;
 }
@@ -27,4 +26,33 @@
 .nav-link {
     color: inherit !important;
     padding: 0.7rem 0 0.7rem 0 !important;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: var(--color-light-blue-1) !important;
+    opacity: 1 !important;
+}
+
+.form-control:focus {
+    color: inherit !important;
+    background-color: #fff;
+    border-color: var(--color-light-blue-3) !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(225, 227, 235, 0.8);
+}
+
+.btn-link {
+    font-weight: 400;
+    color: var(--color-dark-blue-2) !important;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: var(--color-dark-blue-3) !important;
+    text-decoration: none !important;
+}
+
+.btn-link:focus, .btn-link.focus {
+  text-decoration: none !important;
+  box-shadow: none;
 }
