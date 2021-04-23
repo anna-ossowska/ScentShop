@@ -1,5 +1,6 @@
 ﻿@import '../abstracts/_variables.css';
 @import '../base/_animations.css';
+@import '../base/_base.css';
 
 .banner-container {
     display: grid;
