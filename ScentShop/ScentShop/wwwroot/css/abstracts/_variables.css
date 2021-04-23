@@ -26,29 +26,29 @@
 
 
 /* big-desktop */
-@media only screen and (min-width: 112.5em) {
+/*@media only screen and (min-width: 112.5em) {
     body {
         background: yellow;
     }
-}
+}*/
 
 /* tab-land */
-@media only screen and (max-width: 75em) {
+/*@media only screen and (max-width: 75em) {
     body {
         background: green;
     }
-}
+}*/
 
 /* tab-port */
-@media only screen and (max-width: 56.25em) {
+/*@media only screen and (max-width: 56.25em) {
     body {
         background: blue;
     }
 }
 
-/* phone */
 @media only screen and (max-width: 37.5em) {
     body {
         background: red;
     }
-}
+}*/
+
