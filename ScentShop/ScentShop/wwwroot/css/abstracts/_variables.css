@@ -14,3 +14,41 @@
     --color-dark-blue-3: #7F859E;
     --color-brown: #B4A5A5;
 }
+
+/* BREAKPOINTS: */
+
+/* 1em = 16px */
+
+/* big-desktop --> 1800px / 16 = 112.5em */
+/* tab-land --> 1200px / 16 = 75em */
+/* tab-port --> 900px / 16 = 56.25em */
+/* phone --> 600px / 16 = 37.5em */
+
+
+/* big-desktop */
+@media only screen and (min-width: 112.5em) {
+    body {
+        background: yellow;
+    }
+}
+
+/* tab-land */
+@media only screen and (max-width: 75em) {
+    body {
+        background: green;
+    }
+}
+
+/* tab-port */
+@media only screen and (max-width: 56.25em) {
+    body {
+        background: blue;
+    }
+}
+
+/* phone */
+@media only screen and (max-width: 37.5em) {
+    body {
+        background: red;
+    }
+}
