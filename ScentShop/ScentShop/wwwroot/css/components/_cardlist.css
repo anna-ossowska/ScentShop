@@ -97,7 +97,7 @@
 .list-card-details .name {
     font-size: 1.25rem;
     font-weight: 500;
-     transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
 }
 
 .list-card-details .price {

@@ -26,16 +26,16 @@
 
 .bannerlist-content p {
     font-family: 'Lora', serif;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     font-weight: 400;
     color: var(--color-dark-grey-2);
-    margin-top: 1.25rem;
+    margin-top: 1.5rem;
     letter-spacing: 0.08rem;
 }
 
 .bannerlist-divider {
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -45,12 +45,24 @@
     text-align: center;
 }
 
+
 /* phone */
 @media only screen and (max-width: 37.5em) {
+
+    .bannerlist {
+        height: 20vh;
+    }
+
     .bannerlist-content {
         width: 20rem;
     }
+
     .bannerlist-content h3 {
         font-size: 1.8rem;
+    }
+
+    .bannerlist-content p {
+        font-size: 1.2rem;
+
     }
 }

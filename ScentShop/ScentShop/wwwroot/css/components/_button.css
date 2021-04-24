@@ -86,3 +86,10 @@
     font-size: 1rem !important;
     margin-top: 0.25rem;
 }
+
+@media only screen and (max-width: 37.5em) {
+    .bt--small {
+        padding: 0.7rem 1.1rem !important;
+        font-size: 0.8rem !important;
+    }
+}

@@ -159,3 +159,69 @@ th.price {
 .shopcart-wrapper--empty .description {
     margin-bottom: 2rem;
 }
+
+
+/* tab-land */
+@media only screen and (max-width: 80em) {
+
+    .shopcart-container {
+        margin: 2.5rem auto;
+        padding: 0 5rem;
+    }
+
+    th.picture {
+        width: 15%;
+    }
+}
+
+/* tab-port */
+@media only screen and (max-width: 56.25em) {
+
+    .shopcart-container {
+        margin: 2.5rem auto;
+        padding: 0 3rem;
+    }
+
+    th.picture, td.picture {
+        display: none;
+    }
+
+    td {
+        font-size: 1rem;
+    }
+
+}
+
+/* phone */
+@media only screen and (max-width: 37.5em) {
+
+    .shopcart-container {
+        margin: 2.5rem auto;
+        padding: 0 2rem;
+    }
+
+    td, th {
+        font-size: 0.8rem;
+    }
+
+     th.picture, td.picture {
+        display: none;
+    }
+
+    .shopcart-summary .shipping-info {
+        font-size: 0.6rem;
+    }
+
+    .shopcart-summary .total {
+        font-size: 0.8rem;
+    }
+
+    .quantity-wrapper .number {
+        font-size: 0.8rem;
+    }
+
+    .total span {
+        font-size: 0.8rem;
+    }
+
+}

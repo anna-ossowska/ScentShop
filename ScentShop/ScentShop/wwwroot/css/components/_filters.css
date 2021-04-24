@@ -50,4 +50,8 @@
     .filter-item::after {
         display: none;
     }
+
+    .filter-header {
+        margin-top: 0.5rem;
+    }
 }
