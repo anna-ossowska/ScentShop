@@ -2,14 +2,13 @@
 
 .container-authentication {
     margin: 1rem auto;
-
 }
 
 .col-authentication {
     border: 1px solid var(--color-light-blue-2);
     box-shadow: 0 0.05rem 0.1rem rgba(0, 0,0, 0.1);
     border-radius: 2px;
-    padding: 2.5rem 4rem;
+    padding: 2rem 3rem;
 }
 
 .row-authentication {
