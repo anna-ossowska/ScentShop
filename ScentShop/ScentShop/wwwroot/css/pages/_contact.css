@@ -56,3 +56,40 @@ h3.contact-header {
     height: 35vh;
     width: 100%;
 }
+
+/* tab-port */
+@media only screen and (max-width: 56.25em) {
+
+    .contact-container {
+        margin: 2.5rem auto;
+        padding: 0 1rem;
+    }
+
+    .map-wrapper {
+        padding: 0 2rem;
+    }
+}
+
+/* phone */
+@media only screen and (max-width: 37.5em) {
+
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        margin: 2.5rem auto;
+        padding: 0 0.5rem;
+    }
+
+    h3.contact-header {
+        margin: 0.9rem 0 0.5rem;
+    }
+
+    .bi-telephone,
+    .bi-envelope,
+    .bi-geo-alt {
+        width: 40px;
+        height: 40px;
+    }
+}

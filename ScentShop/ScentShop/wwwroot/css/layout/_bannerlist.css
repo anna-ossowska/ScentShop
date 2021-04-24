@@ -45,13 +45,6 @@
     text-align: center;
 }
 
-/* tab-port */
-/*@media only screen and (max-width: 56.25em) {
-    body {
-        background: blue;
-    }
-}*/
-
 /* phone */
 @media only screen and (max-width: 37.5em) {
     .bannerlist-content {
