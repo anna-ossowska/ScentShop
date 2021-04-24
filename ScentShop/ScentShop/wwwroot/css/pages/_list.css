@@ -53,10 +53,14 @@
         grid-template-rows: 1fr;
     }
 
+    .list-sortdata-group {
+        padding: 0;
+        margin: 0;
+    }
+
     .list-sortdata {
-        margin: 1rem;
-        margin-bottom: 0;
-        padding-bottom: 0;
+        margin: 1rem 1rem 0;
+        padding: 1rem 1rem 0;
     }
 
     .list-sortdata-group .populartags-header,

@@ -30,7 +30,7 @@
     border-radius: 50%;
     background-color: var(--color-light-blue-2);
     position: absolute;
-    top: 7px;
+    top: 9px;
     left: 12rem;
     opacity: 0;
     transition: all 0.25s ease-out;
@@ -42,4 +42,12 @@
 
 .filter-item:hover::after {
     opacity: 1;
+}
+
+/* phone */
+@media only screen and (max-width: 37.5em) {
+
+    .filter-item::after {
+        display: none;
+    }
 }

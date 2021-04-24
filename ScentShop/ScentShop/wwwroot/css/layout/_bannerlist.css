@@ -44,3 +44,20 @@
     background-color: #fff;
     text-align: center;
 }
+
+/* tab-port */
+/*@media only screen and (max-width: 56.25em) {
+    body {
+        background: blue;
+    }
+}*/
+
+/* phone */
+@media only screen and (max-width: 37.5em) {
+    .bannerlist-content {
+        width: 20rem;
+    }
+    .bannerlist-content h3 {
+        font-size: 1.8rem;
+    }
+}
