@@ -39,90 +39,89 @@
 </head>
 
 <body>
-    <div id="page-container">
-        <div id="content-wrap">
-            <header>
-                <nav id="navig">
-                    <a class="navig-logo" asp-area="" asp-controller="Home" asp-action="Index">ScentShop</a>
+    <div id="content">
+        <header>
+            <nav id="navig">
+                <a class="navig-logo" asp-area="" asp-controller="Home" asp-action="Index">ScentShop</a>
+                <ul>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                        </svg>
+                        <partial name="_LoginPartial" />
+                    </li>
+                    <li>
+                        <a class="shopping-cart-link" asp-controller="ShoppingCart" asp-action="Index">
+                            <span class="shopping-cart-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="bi bi-basket3" viewBox="0 0 16 16">
+                                    <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6h-9.21z" />
+                                </svg>
+                            </span>
+                            <span id="cart-status">
+                                @await Component.InvokeAsync("ShoppingCartSummary")
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav id="navig-secondary">
+                <div class="navig-container">
                     <ul>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-person" viewBox="0 0 16 16">
-                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-                            </svg>
-                            <partial name="_LoginPartial" />
+                        <li class="@Html.IsActive("Home", "Index")" id=home>
+                            <a asp-area="" asp-controller="Home" asp-action="Index">&nbsp;Home</a>
                         </li>
-                        <li>
-                            <a class="shopping-cart-link" asp-controller="ShoppingCart" asp-action="Index">
-                                <span class="shopping-cart-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="bi bi-basket3" viewBox="0 0 16 16">
-                                        <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6h-9.21z" />
-                                    </svg>
-                                </span>
-                                <span id="cart-status">
-                                    @await Component.InvokeAsync("ShoppingCartSummary")
-                                </span>
-                            </a>
+
+                        <li class="@Html.IsActive("Perfume", "List")" id="products">
+                            <a asp-controller="Perfume" asp-action="List">Products</a>
+                        </li>
+
+                        <li class="@Html.IsActive("ShoppingCart", "Index")" id="shopping">
+                            <a asp-controller="ShoppingCart" asp-action="Index">Shopping</a>
+                        </li>
+
+                        <li class="@Html.IsActive("Contact", "Index")" id="contact">
+                            <a asp-controller="Contact" asp-action="Index">Contact</a>
                         </li>
                     </ul>
-                </nav>
-
-                <nav id="navig-secondary">
-                    <div class="navig-container">
-                        <ul>
-                            <li class="@Html.IsActive("Home", "Index")" id=home>
-                                <a asp-area="" asp-controller="Home" asp-action="Index">&nbsp;Home</a>
-                            </li>
-
-                            <li class="@Html.IsActive("Perfume", "List")" id="products">
-                                <a asp-controller="Perfume" asp-action="List">Products</a>
-                            </li>
-
-                            <li class="@Html.IsActive("ShoppingCart", "Index")" id="shopping">
-                                <a asp-controller="ShoppingCart" asp-action="Index">Shopping</a>
-                            </li>
-
-                            <li class="@Html.IsActive("Contact", "Index")" id="contact">
-                                <a asp-controller="Contact" asp-action="Index">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-
-            <br />
-
-            <main role="main">
-                @RenderBody()
-            </main>
-        </div>
-
-
-        <footer>
-            <div class="footer-container">
-
-                <div class="footer-rights">
-                    <p>2021 | All Rights Reserved</p>
                 </div>
+            </nav>
+        </header>
 
-                <div class="footer-social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
+        <br />
 
-                <div class="footer-other">
-                    <p>Campaign</p>
-                    <p>Policy</p>
-                </div>
-
-            </div>
-        </footer>
-
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-
-        @RenderSection("Scripts", required: false)
+        <main role="main">
+            @RenderBody()
+        </main>
     </div>
+
+
+    <footer id="footer">
+        <div class="footer-container">
+
+            <div class="footer-rights">
+                <p>2021 | All Rights Reserved</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <div class="footer-other">
+                <p>Campaign</p>
+                <p>Policy</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+
 </body>
 </html>

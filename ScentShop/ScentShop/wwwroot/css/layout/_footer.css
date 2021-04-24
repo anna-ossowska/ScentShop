@@ -1,18 +1,12 @@
 ﻿@import '../abstracts/_variables.css';
 
-#page-container {
-    position: relative;
-    min-height: 100vh;
+
+#content {
+    min-height: calc(100vh - 4.25rem);
 }
 
-#content-wrap {
-    padding-bottom: 2.5rem;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+#footer {
+    height: 4.25rem;
 }
 
 .footer-container {

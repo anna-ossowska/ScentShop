@@ -1,7 +1,7 @@
 ﻿@import '../abstracts/_variables.css';
 
 .shopcart-container {
-    margin: 2.5rem auto 6.8rem;
+    margin: 2.5rem auto;
     padding: 0 12rem;
 }
 
@@ -140,7 +140,7 @@ th.price {
 
 /*Empty shopping cart*/
 .shopcart-container--empty {
-    margin: 6rem auto 5.6rem;
+    margin: 2.5rem auto 0;
     padding: 0 12rem;
 }
 
@@ -172,6 +172,10 @@ th.price {
     th.picture {
         width: 15%;
     }
+
+    .shopcart-wrapper--empty .icon {
+        width: 13rem;
+    }
 }
 
 /* tab-port */
@@ -190,6 +194,13 @@ th.price {
         font-size: 1rem;
     }
 
+    .shopcart-container--empty {
+        padding: 0 2rem;
+    }
+
+    .shopcart-wrapper--empty .icon {
+        width: 12rem;
+    }
 }
 
 /* phone */

@@ -36,21 +36,14 @@
     margin: 1rem;
 }
 
-/* tab-port */
-@media only screen and (max-width: 56.25em) {
-    .list-cards {
-        padding: 0.5rem;
-        margin: 1rem;
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-        grid-gap: 2em;
-    }
-}
-
-/* phone */
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 46em) {
     #list-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+    }
+
+    .list-cards {
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
     }
 
     .list-sortdata-group {
@@ -76,5 +69,3 @@
         justify-self: center;
     }
 }
-
-
