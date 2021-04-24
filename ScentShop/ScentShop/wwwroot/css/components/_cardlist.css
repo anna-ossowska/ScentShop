@@ -108,3 +108,16 @@
     color: var(--color-dark-grey-2);
 }
 
+/* tab-port */
+@media only screen and (max-width: 56.25em) {
+    .list-card {
+        min-width: 14rem;
+    }
+}
+
+/* phone */
+@media only screen and (max-width: 37.5em) {
+    .list-card {
+        max-width: 13rem;
+    }
+}

@@ -36,41 +36,41 @@
     margin: 1rem;
 }
 
-
-/* Normal */
-/*@media(min-width: 769px) and (max-width: 1200px) {
-    body {
-        background: green;
-    }
-
+/* tab-port */
+@media only screen and (max-width: 56.25em) {
     .list-cards {
-        grid-template-columns: repeat(auto-fit, minmax(190px, 2fr));
+        padding: 0.5rem;
+        margin: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        grid-gap: 2em;
     }
-}*/
+}
 
-
-/* Tablets */
-/*@media(min-width: 501px) and (max-width: 768px) {
-    body {
-        background: blue;
-    }
-
-    .list-cards {
-        grid-template-columns: repeat(auto-fit, minmax(170px, 2fr));
-    }
-}*/
-
-/* Smartphones */
-/*@media only screen and (max-width: 500px) {
-    body {
-        background: red;
+/* phone */
+@media only screen and (max-width: 37.5em) {
+    #list-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
     }
 
-    .list-cards {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    .list-sortdata {
+        margin: 1rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
-}*/
 
+    .list-sortdata-group .populartags-header,
+    .list-sortdata-group .tag {
+        display: none;
+    }
 
+    .list-search {
+        margin: 0rem 1rem 1rem 1rem;
+    }
+
+    .list-card {
+        justify-self: center;
+    }
+}
 
 
