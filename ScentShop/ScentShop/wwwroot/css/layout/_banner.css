@@ -141,10 +141,10 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 60vh;
+        height: 45vh;
         position: relative;
-        padding: 2rem;
-        margin: 0 3rem 2rem;
+        padding: 1.5rem 2rem 2.5rem;
+        margin: 0 3rem 1.5rem;
     }
 
     .banner-image {
@@ -167,72 +167,7 @@
 
     /* Text style */
     .banner-header h2 {
-        font-size: 5.5rem;
-    }
-
-    .banner-header h3 {
-        font-size: 2.15rem;
-        padding-left: 0.5rem;
-    }
-
-    .banner-description p {
-        margin-bottom: 1.5rem;
-    }
-}
-
-/*iPhone6/7/8*/
-@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-    .banner-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 60vh;
-        position: relative;
-        padding: 2rem;
-        margin: 0 3rem 3.5rem;
-    }
-
-    /* Text style */
-    .banner-header h2 {
         font-size: 5rem;
-    }
-
-    .banner-header h3 {
-        font-size: 2.25rem;
-        padding-left: 0.5rem;
-    }
-}
-
-/*Galaxy S5*/
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-    .banner-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 60vh;
-        position: relative;
-        padding: 2rem;
-        margin: 0 3rem 4rem;
-    }
-}
-
-/* iPhone 5 only */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
-    .banner-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 65vh;
-        position: relative;
-        padding: 2rem;
-        margin: 0 2rem 3rem;
-    }
-    /* Text style */
-    .banner-header h2 {
-        font-size: 4rem;
     }
 
     .banner-header h3 {
@@ -241,6 +176,6 @@
     }
 
     .banner-description p {
-        margin-bottom: 2rem;
-    }  
+        margin-bottom: 1.5rem;
+    }
 }
