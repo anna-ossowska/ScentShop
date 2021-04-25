@@ -1,24 +1,29 @@
 ﻿@import '../abstracts/_variables.css';
 
 .container-profile {
-    margin: 3rem auto;
+    margin: 2rem auto;
     border: 1px solid var(--color-light-blue-2);
-    box-shadow: 0 0.05rem 0.1rem rgba(0, 0,0, 0.1);
+
+    border-radius: 2px;
     min-height: 29rem;
 }
 
 .profile-col--1 {
     padding: 3rem;
-    background-color: var(--color-light-blue-1);
+    background-color: var(--color-dark-purple-2);
+    border: 1px solid var(--color-dark-purple-2);
+    color: #fff;
+    border-radius: 2px 0 0 2px;
 }
 
 .profile-col--2 {
-    padding: 3.5rem 2rem 3rem 3rem;
+    padding: 3.5rem 3rem 3rem;
     min-height: 29rem;
+
 }
 
 .nav-link.active {
-    border-bottom: 0.5px solid var(--color-dark-blue-2) !important;
+    border-bottom: 0.5px solid #fff !important;
     background-color: transparent !important;
     border-radius: 0;
 }
@@ -55,4 +60,29 @@
 .btn-link:focus, .btn-link.focus {
   text-decoration: none !important;
   box-shadow: none;
+}
+
+/* phone */
+@media only screen and (max-width: 36.5em) {
+
+    .wrapper-profile {
+        padding: 0 2rem 0 1rem;
+    }
+
+    .container-profile {
+        margin: 3rem 0.5rem;
+    }
+
+    .profile-col--1 {
+        padding: 2rem 3rem 2rem 3rem;
+    }
+
+    .profile-col--2 {
+        padding: 3rem;
+        min-height: 29rem;
+    }
+
+    .nav-link.active  {
+        width: 10rem;
+    }
 }
