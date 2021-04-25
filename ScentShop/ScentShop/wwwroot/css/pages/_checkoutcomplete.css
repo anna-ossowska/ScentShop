@@ -1,0 +1,46 @@
+﻿@import '../abstracts/_variables.css';
+
+.checkoutcomplete-container {
+    margin: 2.5rem auto 0;
+    padding: 0 12rem;
+}
+
+.checkoutcomplete-wrapper {
+    text-align: center;
+}
+
+.checkoutcomplete-wrapper .icon {
+    width: 15rem;
+}
+
+.checkoutcomplete-wrapper .header {
+    margin-top: 2rem;
+}
+
+.checkoutcomplete-wrapper .description {
+    margin-bottom: 1.5rem;
+}
+
+/* tab-land */
+@media only screen and (max-width: 80em) {
+
+    .checkoutcomplete-wrapper .icon {
+        width: 13rem;
+    }
+
+    .checkoutcomplete-wrapper .description {
+        margin-bottom: 1.25rem;
+    }
+}
+
+/* tab-port */
+@media only screen and (max-width: 56.25em) {
+
+    .checkoutcomplete-wrapper .icon {
+        width: 12rem;
+    }
+
+    .checkoutcomplete-container {
+        padding: 0 2rem;
+    }
+}

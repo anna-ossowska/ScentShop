@@ -1,1 +1,8 @@
-﻿<h2>@ViewBag.CheckoutCompleteMessage </h2>
+﻿<div class="checkoutcomplete-container ">
+    <div class="checkoutcomplete-wrapper">
+        <img class="icon" src="/images/shopping-bag-outlined-2.svg" alt="Alternate Text" />
+        <h3 class="header">@ViewBag.CheckoutCompleteMessage</h3>
+        <p class="description">The order is being processed by our team.</p>
+        <a asp-controller="Home" asp-action="Index" class="bt bt--main bt--animated bt-smaller">Home Page</a>
+    </div>
+</div>

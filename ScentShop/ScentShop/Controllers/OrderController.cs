@@ -47,7 +47,7 @@ namespace ScentShop.Controllers
 
         public IActionResult CheckoutComplete()
         {
-            ViewBag.CheckoutCompleteMessage = "Thank you for your purchase. The order is being processed by our team.";
+            ViewBag.CheckoutCompleteMessage = "Thank you!";
             return View();
         }
     }

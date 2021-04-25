@@ -157,7 +157,7 @@ th.price {
 }
 
 .shopcart-wrapper--empty .description {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -175,6 +175,10 @@ th.price {
 
     .shopcart-wrapper--empty .icon {
         width: 13rem;
+    }
+
+    .shopcart-wrapper--empty .description {
+        margin-bottom: 1.25rem;
     }
 }
 
@@ -234,5 +238,4 @@ th.price {
     .total span {
         font-size: 0.8rem;
     }
-
 }

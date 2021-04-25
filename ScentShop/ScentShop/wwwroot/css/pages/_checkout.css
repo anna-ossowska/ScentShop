@@ -1,4 +1,6 @@
-﻿.container-checkout {
+﻿@import '../abstracts/_variables.css';
+
+.container-checkout {
     margin: 2rem auto;
 }
 
