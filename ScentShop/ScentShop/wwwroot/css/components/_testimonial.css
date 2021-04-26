@@ -1,1 +1,109 @@
-﻿
+﻿@import '../abstracts/_variables.css';
+@import '../base/_animations.css';
+
+.testimonials-container {
+    background-color: var(--color-light-blue-2);
+    color: inherit;
+    border-radius: 5px;
+    margin: 2rem auto 4rem;
+    padding: 4rem 6rem;
+    width: 48rem;
+    position: relative;
+}
+
+.testimonial {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.25rem;
+}
+
+.user {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.user-img {
+    border-radius: 50%;
+    height: 4.25rem;
+    width: 4.25rem;
+    object-fit: cover;
+}
+
+.user .user-details {
+    margin-left: 1rem;
+    text-align: right;
+}
+
+.user .user-name {
+    margin: 0 0 0.15rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.user .country {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #fff;
+    height: 0.3rem;
+    animation: grow 10s linear infinite;
+    transform-origin: left;
+    margin-bottom: 1.25rem;
+}
+
+.fa-quote {
+    color: var(--color-light-blue-1);
+    font-size: 2.5rem;
+    position: absolute;
+    top: 5.5rem;
+}
+
+.fa-quote-right {
+    right: 1.75rem;
+}
+
+.fa-quote-left {
+    left: 1.75rem;
+}
+
+
+/* tab-port */
+@media only screen and (max-width: 56.25em) {
+
+    .testimonials-container {
+        width: 40rem;
+    }
+}
+
+/* phone */
+@media only screen and (max-width: 37.5em) {
+
+    .testimonials-container {
+        width: 27rem;
+        padding: 3rem 2.5rem;
+    }
+
+    .testimonial {
+        font-size: 1.1rem;
+    }
+
+    .user .user-name {
+        font-size: 0.95rem;
+    }
+
+    .user .country {
+        font-size: 0.85rem;
+    }
+
+    div.fas.fa-quote-left.fa-quote::before {
+        display: none;
+    }
+
+    div.fas.fa-quote-right.fa-quote::before {
+        display: none;
+    }
+}
