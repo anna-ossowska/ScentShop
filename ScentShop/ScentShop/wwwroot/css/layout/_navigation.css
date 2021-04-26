@@ -159,13 +159,14 @@
 /* phone */
 @media only screen and (max-width: 37.5em) {
     .bi-person {
-        height: 27px;
-        width: 27px;
+        height: 23px;
+        width: 23px;
+        margin-right: 0.1rem
     }
 
     .bi-basket3 {
-        height: 25px;
-        width: 25px;
+        height: 21px;
+        width: 21px;
     }
 }
 

@@ -24,3 +24,29 @@
     justify-content: center;
     align-items: center;
 }
+
+
+/* tab-land */
+@media only screen and (max-width: 75em) {
+    .cart-status-wrapper {
+        top: 1.9rem;
+        left: 1.6rem;
+    }
+}
+
+
+/* phone */
+@media only screen and (max-width: 37.5em) {
+    .cart-status-wrapper {
+        top: 1.85rem;
+        left: 1.6rem;
+    }
+}
+
+/* tab-port */
+@media only screen and (max-width: 56.25em) {
+    .cart-status-wrapper {
+        top: 1.9rem;
+        left: 1.65rem;
+    }
+}

@@ -50,7 +50,7 @@ h3.contact-header {
 }
 
 .contact-map {
-    background-image: url('/images/map-final.png');
+    background-image: url('/images/contact-map.png');
     background-position: center;
     background-size: cover;
     height: 35vh;

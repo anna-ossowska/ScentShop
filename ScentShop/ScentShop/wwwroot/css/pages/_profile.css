@@ -2,7 +2,7 @@
 
 .container-profile {
     margin: 2rem auto;
-    border-radius: 2px;
+    border-radius: 5px;
     min-height: 29rem;
 }
 
@@ -11,7 +11,7 @@
     background-color: var(--color-dark-purple-2);
     border: 1px solid var(--color-dark-purple-2);
     color: #fff;
-    border-radius: 2px 0 0 2px;
+    border-radius: 5px 0 0 5px;
 }
 
 .profile-col--2 {
@@ -19,7 +19,7 @@
     min-height: 29rem;
     border: 1px solid var(--color-light-blue-2);
     background-color: var(--color-light-blue-1);
-    border-radius: 0 2px 2px 0;
+    border-radius: 0 5px 5px 0;
 }
 
 .nav-link.active {
@@ -79,13 +79,13 @@
 
     .profile-col--1 {
         padding: 2rem 3rem 2rem 3rem;
-        border-radius: 2px 2px 0 0;
+        border-radius: 5px 5px 0 0;
     }
 
     .profile-col--2 {
         padding: 3rem;
         min-height: 29rem;
-        border-radius: 0 0 2px 2px;
+        border-radius: 0 0 5px 5px;
     }
 
     .nav-link.active  {
