@@ -23,6 +23,7 @@
     align-self: start;
     padding-top: 4rem;
     margin-right: 1rem;
+    animation: moveInLeft 1s ease-out;
 }
 
 .banner-description {
@@ -31,6 +32,7 @@
     padding-bottom: 0.8rem;
     margin-left: 1rem;
     width: 20rem;
+    animation: moveInRight 1s ease-out;
 }
 
 /* Text style */
@@ -99,12 +101,14 @@
         justify-self: start;
         align-self: end;
         padding-left: 0.5rem;
+        animation: moveInRight 1s ease-out;
     }
 
     .banner-description {
         grid-area: description;
         align-self: start;
         padding-bottom: 3.5rem;
+        animation: moveInRight 1s ease-out;
     }
 
     .banner-price {
@@ -157,12 +161,14 @@
 
     .banner-header {
         margin: 0 -1rem;
+        animation: none;
     }
 
     .banner-description {
         margin: 0 auto;
         padding: 0;
         width: 100%;
+        animation: none;
     }
 
     /* Text style */
