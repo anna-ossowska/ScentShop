@@ -33,17 +33,16 @@
 .user .user-details {
     margin-left: 1rem;
     text-align: right;
+    font-size: 1.1rem;
 }
 
 .user .user-name {
     margin: 0 0 0.15rem;
-    font-size: 1.1rem;
     font-weight: 400;
 }
 
 .user .country {
     margin: 0;
-    font-size: 1rem;
 }
 
 .progress-bar {
@@ -91,12 +90,8 @@
         font-size: 1.1rem;
     }
 
-    .user .user-name {
+    .user .user-details {
         font-size: 0.95rem;
-    }
-
-    .user .country {
-        font-size: 0.85rem;
     }
 
     div.fas.fa-quote-left.fa-quote::before {
