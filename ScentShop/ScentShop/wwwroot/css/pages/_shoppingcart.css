@@ -3,6 +3,7 @@
 .shopcart-container {
     margin: 2.5rem auto;
     padding: 0 12rem;
+    overflow: hidden;
 }
 
 .shopcart-table {

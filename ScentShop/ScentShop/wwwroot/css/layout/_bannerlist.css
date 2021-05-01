@@ -1,7 +1,7 @@
 ﻿@import '../abstracts/_variables.css';
 
 .bannerlist {
-    height: 25vh;
+    height: 30vh;
     width: 100%;
     background-image: linear-gradient( to right bottom, rgba(245, 246, 249, 0.2), rgba(225, 227, 235, 0.5)), url('/images/bannerlist.png');
     background-size: cover;
@@ -50,7 +50,7 @@
 @media only screen and (max-width: 37.5em) {
 
     .bannerlist {
-        height: 20vh;
+        height: 30vh;
     }
 
     .bannerlist-content {
