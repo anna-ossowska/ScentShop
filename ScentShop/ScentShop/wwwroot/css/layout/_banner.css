@@ -142,11 +142,12 @@
 
     .banner-container {
         justify-items: center;
-        height: 60vh;
+        height: 100%;
     }
 
     .banner-image {
         display: none;
+        animation: none;
     }
 
     .banner-header {
@@ -169,14 +170,46 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
     .banner-header h2 {
         font-size: 5rem;
+        animation: none;
     }
 
     .banner-header h3 {
         font-size: 2rem;
         padding-left: 0.5rem;
+        animation: none;
     }
 
     .banner-description p {
         font-size: 1.25rem;
+        animation: none;
+    }
+}
+
+/* Landscape */
+@media(max-height: 31.25em) {
+
+    .banner-container {
+        justify-items: center;
+        height: 100%;
+    }
+
+    .banner-image {
+        display: none;
+        animation: none;
+    }
+
+    .banner-header {
+        grid-column: 1 / span 2;
+        justify-self: center;
+        width: 22rem;
+        padding-top: 1rem;
+        animation: none;
+    }
+
+    .banner-description {
+        grid-column: 1 / span 2;
+        justify-self: center;
+        width: 22rem;
+        animation: none;
     }
 }

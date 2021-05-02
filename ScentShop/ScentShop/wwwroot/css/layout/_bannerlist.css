@@ -45,7 +45,6 @@
     text-align: center;
 }
 
-
 /* phone */
 @media only screen and (max-width: 37.5em) {
 
@@ -64,5 +63,12 @@
     .bannerlist-content p {
         font-size: 1.2rem;
 
+    }
+}
+
+/* Landscape */
+@media(max-height: 31.25em) {
+    .bannerlist {
+        height: 55vh;
     }
 }

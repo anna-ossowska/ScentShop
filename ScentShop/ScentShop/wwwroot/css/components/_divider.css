@@ -33,6 +33,6 @@
 /* phone */
 @media only screen and (max-width: 37.5em) {
     .divider::after {
-        top: -1px;
+        top: -0.8px;
     }
 }
